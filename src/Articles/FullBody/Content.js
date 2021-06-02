@@ -20,6 +20,7 @@ import SLDeadlift2 from "../../Images/SLDeadlift2.jpg";
 import { useStyles } from "../../Styles";
 import {
   ArticleTitle,
+  DayTitle,
   ExerciseItem,
   NoteFromJosh,
   RoutineTable,
@@ -33,12 +34,12 @@ export default function Content() {
   const classes = useStyles();
   return (
     <>
-      <ArticleTitle>AT HOME FULL BODY WORKOUT</ArticleTitle>
+      <ArticleTitle>Total Full Body Home Workout</ArticleTitle>
       <ArticleMargin>
         <Intro />
         <Equipment />
         <WorkoutStructure />
-        <Typography variant="h3">DAY 1</Typography>
+        <DayTitle>DAY 1</DayTitle>
         <ExerciseItem
           title="Press Ups 4x10"
           imgSrc={[pressups_down, pressups_up]}
@@ -132,6 +133,32 @@ export default function Content() {
           </Typography>
         </ExerciseItem>
         <ExerciseItem
+          title="Triceps Overhead Press 4x10"
+          imgSrc={[overhead_press]}
+          ourTip="If you are working one arm at a time, use your free arm to
+        hold your working-arm’s elbow in place. This reduces the pressure on your shoulder 
+        joint and is especially important for people with a history of shoulder issues like 
+        myself.
+
+        (I dislocated my shoulder in a bike accident)."
+        >
+          <Typography paragraph>
+            Whether you're looking for big arms like Arnold, or just a toned
+            look, training your triceps is crucial. In fact, biceps only make up
+            about a third of the upper arm muscle mass, with the other two
+            thirds being made up by the triceps, so you hear that lads? If you
+            want full arms, get training triceps more! They already get some
+            secondary work in the press-ups so this should really finish them
+            off.
+          </Typography>
+          <Typography paragraph>
+            Your arm should be positioned above your head and the weight should
+            be lowered just behind your head and back up. You can do this
+            exercise either with both arms or one arm at a time.
+          </Typography>
+        </ExerciseItem>
+        <DayTitle>DAY 2</DayTitle>
+        <ExerciseItem
           title="Dumbbell Flyes 4x10"
           imgSrc={[dumbbell_flyes, dumbbell_flyes2]}
           ourTip="The best way is to stop the movement before they touch and
@@ -153,31 +180,6 @@ export default function Content() {
           </Typography>
         </ExerciseItem>
         <ExerciseItem
-          title="Triceps Overhead Press 4x10"
-          imgSrc={[overhead_press]}
-          ourTip="If you are working one arm at a time, use your free arm to
-        hold your working-arm’s elbow in place. This increases the isometric
-        contraction and also reduces the pressure on your shoulder joint.
-        This is especially important for people with a history of shoulder
-        issues like myself (I dislocated my shoulder in a bike accident)."
-        >
-          <Typography paragraph>
-            Whether you're looking for big arms like Arnold, or just a toned
-            look, training your triceps is crucial. In fact, biceps only make up
-            about a third of the upper arm muscle mass, with the other two
-            thirds being made up by the triceps, so you hear that lads? If you
-            want full arms, get training triceps more! They already get some
-            secondary work in the press-ups so this should really finish them
-            off.
-          </Typography>
-          <Typography paragraph>
-            Your arm should be positioned above your head and the weight should
-            be lowered just behind your head and back up. You can do this
-            exercise either with both arms or one arm at a time.
-          </Typography>
-        </ExerciseItem>
-        <Typography variant="h3">DAY 2</Typography>
-        <ExerciseItem
           title="Dumbbell Side Raises 4x10 or Gauntlet Set"
           imgSrc={[side_raises]}
           ourTip="If your side delts are very tired at the end of one of the sets and
@@ -185,11 +187,10 @@ export default function Content() {
         movement with no weight to achieve sufficient burnout."
         >
           <Typography paragraph>
-            An excellent exercise for functional strength stability and also for
-            growing wide shoulders. Your side delts ourvide most of the width
-            effect on your shoulders and are an important part of the classic
-            V-Taper body shape. The standard set variation is an option, but I
-            love this exercise with what I call a gauntlet set.
+            An excellent exercise for strength and shoulder stability. Whether
+            you're trying to tone up or build a set of impressive shoulders this
+            exercise is a must do. The standard set variation is an option, but
+            I love to do what I call a gauntlet set to really feel the burn.
           </Typography>
           <Typography paragraph>
             You start with a heavy weight where you can do about 5 reps of the
@@ -233,8 +234,8 @@ export default function Content() {
           title="Dumbbell Shrugs 4x10"
           imgSrc={[shrugs1, shrugs2]}
           ourTip="Bend
-        forwards slightly whilst keeping a straight back to maximise the
-        activation of traps. Do not bend too far forward or round your back."
+        forwards slightly to maximise the
+        activation of traps. As always make sure you don't round your back."
         >
           <Typography paragraph>
             Dumbbell shrugs are to target the traps on the top of the back. A
@@ -257,15 +258,14 @@ export default function Content() {
         >
           <Typography paragraph>
             Here we are, the one most of you were looking for. Asking how much
-            you can curl is a go to for every gym bro, second only to "How much
-            do you bench?", so they must be an excellent indicator of strength
-            right? Wrong. The bicep curl is a relatively isolated form of
-            strength but is excellent for building size.
+            you can curl is a staple in gyms worldwide, second only to "How much
+            do you bench?" because of this many people make the mistake of
+            curling too much weight.
           </Typography>
           <Typography paragraph>
-            With that in mind, it is really important to focus on not letting
-            your shoulders take over the movement just to get the weight up.
-            Keep them relaxed and really focus on feeling your biceps flex.
+            The bicep is a relatively small muscle, so focus on not letting your
+            shoulders take over the movement just to get the weight up. Keep
+            them relaxed and really focus on feeling your biceps flex.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
@@ -293,7 +293,7 @@ export default function Content() {
             morning after his first leg day.
           </Typography>
         </ExerciseItem>
-        <Typography variant="h3">DAY 3</Typography>
+        <DayTitle>DAY 3</DayTitle>
         <ExerciseItem
           title="Dumbbell Romanian Deadlift 4x10"
           imgSrc={[SLDeadlift1, SLDeadlift2]}
@@ -340,10 +340,10 @@ export default function Content() {
             work where the wrist is under more pressure.
           </Typography>
         </ExerciseItem>
-        <p style={{ fontStyle: "italic", paddingTop: 40 }}>
+        <Typography paragraph style={{ fontStyle: "italic", paddingTop: 40 }}>
           These last two exercises have already been explained earlier on in the
           routine so I'm not going to go into more detail about them.
-        </p>
+        </Typography>
         <ExerciseItem title="Press Ups 4x10" />
         <ExerciseItem title="Dumbbell Side Raises 4x10 or Gauntlet Set" />
       </ArticleMargin>

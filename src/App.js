@@ -2,7 +2,8 @@ import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import React, { useState } from "react";
 import { CssBaseline, Grid } from "@material-ui/core";
 import { TopNavbar } from "./Widgets";
-import { LandingPage, WorkoutsPage } from "./Pages";
+import { ComingSoon, WorkoutsPage } from "./Pages";
+import LandingPage from "./HomePage";
 import {
   orange,
   lightBlue,
@@ -27,7 +28,7 @@ export default function Dashboard() {
   const mainPrimaryColor = darkState ? orange[500] : lightBlue[500];
   const mainSecondaryColor = darkState ? deepOrange[900] : deepPurple[500];
 
-  const darkTheme = createMuiTheme({
+  const myTheme = createMuiTheme({
     typography: {
       fontFamily: ["Montserrat", "sans-serif"].join(","),
       body1: {
@@ -70,42 +71,49 @@ export default function Dashboard() {
   };
 
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={myTheme}>
       <CssBaseline />
-      <Router>
-        <ScrollToTop />
+      {process.env.REACT_APP_COMMINGSOON ? (
+        <div style={{ height: "100vh", overflow: "hidden" }}>
+          <ComingSoon />
+        </div>
+      ) : (
+        <>
+          <Router>
+            <ScrollToTop />
 
-        <TopNavbar
-          darkState={darkState}
-          handleThemeChange={handleThemeChange}
-        />
-        <Switch>
-          <Route exact path="/" render={() => <LandingPage />} />
-        </Switch>
-        <Grid
-          container
-          direction="row"
-          justify="center"
-          alignItems="center"
-          className={classes.contentPadding}
-        >
-          {/* These grids are for the outer margins */}
-          <Grid item xs={9}>
+            <TopNavbar
+              darkState={darkState}
+              handleThemeChange={handleThemeChange}
+            />
             <Switch>
-              <Route
-                exact
-                path="/workouts"
-                render={(props) => <WorkoutsPage {...props} />}
-              />
-              <Route
-                path="/workouts/show"
-                render={(props) => <WorkoutRouter {...props} />}
-              />
+              <Route exact path="/" render={() => <LandingPage />} />
             </Switch>
-          </Grid>
-        </Grid>
-      </Router>
-      <BottomBanner />
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              className={classes.contentPadding}
+            >
+              <Grid item xs={9}>
+                <Switch>
+                  <Route
+                    exact
+                    path="/workouts"
+                    render={(props) => <WorkoutsPage {...props} />}
+                  />
+                  <Route
+                    path="/workouts/show"
+                    render={(props) => <WorkoutRouter {...props} />}
+                  />
+                </Switch>
+              </Grid>
+            </Grid>
+            <BottomBanner />
+          </Router>
+        </>
+      )}
     </ThemeProvider>
   );
 }

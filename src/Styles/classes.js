@@ -1,29 +1,34 @@
 import { makeStyles } from "@material-ui/core/styles";
+import { CssBaseline, Grid } from "@material-ui/core";
 // import background from "../Images/Home.jpg";
 import background from "../Images/Home1.jpg";
+import backgroundBlur from "../Images/HomeBlurred.JPG";
+
+const landingHeroStandard = {
+  zIndex: -1,
+  width: "100%",
+  position: "absolute",
+  backgroundImage: `url(${background})`,
+  backgroundPosition: "center" /* Center the image */,
+  backgroundRepeat: "no-repeat" /* Do not repeat the image */,
+  backgroundSize:
+    "cover" /* Resize the background image to cover the entire container */,
+};
 
 export default makeStyles((theme) => ({
+  articleCard: {
+    textDecoration: "none",
+    padding: "0px !important;",
+    color: theme.palette.text.secondary,
+    cursor: "pointer",
+    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+  },
   articleTitle: {
     background: `linear-gradient(${theme.palette.background.default},${theme.palette.background.default} 70%, ${theme.palette.primary.highlight} 70%, ${theme.palette.primary.highlight} 90%,${theme.palette.background.default} 90%)`,
   },
   articleTitleWrapper: {
     paddingBottom: 40,
     position: "relative",
-  },
-  bottomBannerWrapper: {
-    backgroundColor: "#002642", //"#3A3F43", , //#001B2E
-    color: "white",
-  },
-  bottomBannerTop: {
-    padding: 40,
-  },
-  bottomBannerBottomInner: {
-    borderTop: "solid white 1px",
-    padding: 20,
-  },
-  bottomBannerMiddleBorders: {
-    borderLeft: `solid white 1px`,
-    borderRight: `solid white 1px`,
   },
   contentPadding: {
     padding: "40px 0px 50px 0px",
@@ -33,16 +38,19 @@ export default makeStyles((theme) => ({
     color: theme.palette.text.secondary,
     // letterSpacing: "5px",
   },
+  footerNavigation: {
+    color: "inherit",
+    cursor: "pointer",
+    textDecoration: "inherit",
+    // letterSpacing: "5px",
+  },
   landingBackground: {
-    zIndex: -1,
     height: "calc(100% - 40px);",
-    width: "100%",
-    position: "absolute",
-    backgroundImage: `url(${background})`,
-    backgroundPosition: "center" /* Center the image */,
-    backgroundRepeat: "no-repeat" /* Do not repeat the image */,
-    backgroundSize:
-      "cover" /* Resize the background image to cover the entire container */,
+    ...landingHeroStandard,
+  },
+  landingBackgroundComingSoon: {
+    height: "100%",
+    ...landingHeroStandard,
   },
   landingInfoBox: {
     textAlign: "right",
@@ -83,19 +91,14 @@ export default makeStyles((theme) => ({
     fontStyle: "italic",
     borderLeft: `solid ${theme.palette.primary.highlight} 5px`,
     float: "right",
-    // backgroundColor: "red",
+    // lineHeight: 2,
+    // fontSize: 16,
     paddingLeft: 10,
   },
   ourTipsWrapper: {
     // backgroundColor: "blue",
     marginBottom: 40,
     padding: 10,
-  },
-  workoutSelectGrid: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-    cursor: "pointer",
   },
   workoutSelectGridMiddle: {
     borderLeft: `solid gray 1px`,
@@ -104,9 +107,5 @@ export default makeStyles((theme) => ({
     textAlign: "center",
     color: theme.palette.text.secondary,
     cursor: "pointer",
-  },
-  workoutSelectImage: {
-    width: "100%",
-    borderRadius: 5,
   },
 }));

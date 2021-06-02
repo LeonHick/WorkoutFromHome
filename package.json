@@ -1,5 +1,6 @@
 {
   "name": "gymfromhome",
+  "homepage": "http://gymfromhome.org/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,6 +17,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "comingsoon": "SET REACT_APP_COMMINGSOON=true && react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

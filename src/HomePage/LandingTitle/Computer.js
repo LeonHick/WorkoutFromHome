@@ -1,8 +1,8 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
-import { useStyles } from "../Styles";
+import { useStyles } from "../../Styles";
 
-export default function LandingTitle() {
+export default function LandingTitleComputer() {
   const classes = useStyles();
   return (
     <Typography>

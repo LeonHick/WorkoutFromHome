@@ -55,7 +55,7 @@ export default function WorkoutStructure() {
   return (
     <div style={{ padding: "40px 0px 40px 0px" }}>
       <Typography paragraph variant="body1">
-        This workout will go as follows:
+        The workout will go like this:
       </Typography>
       <br />
       <br />

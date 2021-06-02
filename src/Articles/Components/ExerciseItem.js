@@ -26,7 +26,9 @@ export default function ExerciseItem({ title, children, imgSrc, ourTip }) {
           {ourTip && (
             <Grid container direction="row-reverse">
               <Grid item xs={8} className={classes.ourTipsWrapper}>
-                <span className={classes.ourTips}>{ourTip}</span>
+                <Typography variant="body2" className={classes.ourTips}>
+                  {ourTip}
+                </Typography>
               </Grid>
             </Grid>
             // <div className={classes.ourTipsWrapper}>

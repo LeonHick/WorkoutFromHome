@@ -77,9 +77,10 @@ export default function PrimarySearchAppBar({ darkState, handleThemeChange }) {
                 component={Link}
                 to={link}
                 style={
-                  pathname.toLowerCase() === `/${label.toLowerCase()}`
-                    ? { backgroundColor: "red" }
-                    : {}
+                  // pathname.toLowerCase() === `/${label.toLowerCase()}`
+                  //   ? { borderBottom: "solid black" }
+                  //   :
+                  {}
                 }
               >
                 <Grid>

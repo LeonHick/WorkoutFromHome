@@ -1,29 +1,42 @@
 import React from "react";
-import { useStyles } from "../../Styles";
-import { Grid } from "@material-ui/core";
+import { Grid, makeStyles } from "@material-ui/core";
 import ContactDetails from "./Contact";
 import Branding from "./Branding";
-import SignUp from "./SignUp";
+import FooterNavigation from "./Navigation";
+import { footerStyles } from "../../Styles";
+
+const theme = "light"; //"dark" "logoColor"
+const includeColoredLogo = true;
 
 export default function BottomBanner() {
-  const classes = useStyles();
+  const classes = footerStyles({ theme, includeColoredLogo });
+  console.log({ classes });
   return (
-    <div className={classes.bottomBannerWrapper}>
-      <Grid container className={classes.bottomBannerTop} justify="center">
-        <Grid container item xs={10}>
-          <Grid item xs={4}>
-            <Branding />
-          </Grid>
-          <Grid item xs={4} style={{ textAlign: "center" }}>
-            <ContactDetails />
-          </Grid>
-        </Grid>
+    <Grid
+      className={classes.mainFooter}
+      container
+      direction="column"
+      justify="center"
+    >
+      <Grid
+        item
+        xs={12} //style={{ backgroundColor: "green" }}
+      >
+        <Branding classes={classes} />
       </Grid>
-      <Grid container justify="center">
-        <Grid item xs={10} className={classes.bottomBannerBottomInner}>
-          <SignUp />
-        </Grid>
+      <Grid
+        container
+        item
+        xs={12} //style={{ backgroundColor: "blue" }}
+      >
+        <FooterNavigation classes={classes} />
       </Grid>
-    </div>
+      <Grid
+        item
+        xs={12} //style={{ backgroundColor: "yellow" }}
+      >
+        <ContactDetails classes={classes} />
+      </Grid>
+    </Grid>
   );
 }
