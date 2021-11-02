@@ -1,14 +1,14 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 import placeholder from "../../Images/Home.jpg";
-import pressups_down from "../../Images/pressups_down_1.jpg";
-import pressups_up from "../../Images/pressups_up_1.jpg";
+import pressups_knees from "../../Images/pressups_knees.png";
 import dumbbell_row from "../../Images/dumbbell_row.jpg";
 import goblet_squat from "../../Images/goblet_squat_front_woman.jpg";
 import dumbbell_flyes from "../../Images/dumbbell_flyes.jpg";
 import dumbbell_flyes2 from "../../Images/dumbbell_flyes2.jpg";
+import dumbbell_flyes3 from "../../Images/dumbbell_flyes3.jpg";
 import side_raises from "../../Images/side_raises.jpg";
-import dumbbell_shoulder_press from "../../Images/dumbell_shoulder_press_landscape.jpg";
+import dumbbell_shoulder_press from "../../Images/lady_overhead_press.png";
 import overhead_press from "../../Images/overhead_press.jpg";
 import shrugs1 from "../../Images/shrugs1.jpg";
 import shrugs2 from "../../Images/shrugs2.jpg";
@@ -37,15 +37,63 @@ export default function Content() {
   return (
     <>
       <ArticleTitle>INTENSIVE SIX DAY HOME WORKOUT</ArticleTitle>
-      <NoteToSelf>
-        THIS PROBABLY NEEDS A ONCE OVER SO IT'S NOT JUT ONE WORKOUT REPEATED
-      </NoteToSelf>
       <ArticleMargin>
         <Intro />
         <Equipment />
         <WorkoutStructure />
-        <DayTitle>DAYS 1 & 4 - PULL</DayTitle>
+        <DayTitle>Day 1 - PUSH</DayTitle>
         <ExerciseItem
+          title="Pressups 3 x As many as possible"
+          imgSrc={[pressups_knees]}
+          ourTip="It's always ok to do pressups on your knees to maintain good form."
+        >
+          <Typography paragraph>
+            Press-ups should be your go-to chest movement for a home workout.
+            Nothing else works your upper body as much without equipment. With
+            these pressups have your hands quite wide to work your chest more
+            than your triceps.
+          </Typography>
+          <Typography paragraph>
+            Imagine lightly pulling your belly button to your spine to keep your
+            core engaged and keep your head in a neutral position to protect
+            your neck.
+          </Typography>
+          <Typography paragraph>
+            If you feel like increasing the difficulty put your feet on a raised
+            surface like your sofa.
+          </Typography>
+        </ExerciseItem>
+        <ExerciseItem
+          title="Dumbbell Overhead Shoulder Press 4x10"
+          imgSrc={[dumbbell_shoulder_press]}
+          ourTip="You don't need to touch the weights together at the top of this movement, doing so just takes the tension off your muscles."
+        >
+          <Typography paragraph>
+            On to the next push exercise for the day, your shoulders will have
+            already been worked during pressups so don't be surprised if you
+            need a lower weight for this exercise than you would if you did it
+            at the start of the workout.
+          </Typography>
+          <Typography paragraph>
+            Hold both weights above your shoulders with your palms facing
+            forward. Push the weight up until your arms are nearly straight, and
+            then let the weight back down making sure it is always under
+            control.
+          </Typography>
+        </ExerciseItem>
+        <ExerciseItem
+          title="Dumbbell Flys 4x10"
+          imgSrc={[dumbbell_flyes3]}
+          ourTip="Tip"
+        >
+          <Typography paragraph>
+            Hold both weights above your shoulders with your palms facing
+            forward. Push the weight up until your arms are nearly straight, and
+            then let the weight back down making sure it is always under
+            control.
+          </Typography>
+        </ExerciseItem>
+        {/* <ExerciseItem
           title="Rear Delt Flyes 4x10"
           imgSrc={[placeholder]}
           ourTip="Make sure to keep
@@ -162,7 +210,7 @@ export default function Content() {
             cycle.
           </Typography>
         </ExerciseItem>
-        <DayTitle>DAYS 2 & 5 - PUSH</DayTitle>
+        <DayTitle>Day 2 - PUSH</DayTitle>
         <ExerciseItem
           title="Dumbbell Bench Press 4x10"
           imgSrc={[placeholder]}
@@ -277,7 +325,7 @@ export default function Content() {
             on 10kg for max. You can stop halfway if this is too much initially.
           </Typography>
         </ExerciseItem>
-        <DayTitle>DAYS 3 & 6 - LEGS</DayTitle>
+        <DayTitle>Day 3 - LEGS</DayTitle>
         <ExerciseItem
           title="Dumbbell Squats 4x10"
           imgSrc={[placeholder]}
@@ -387,7 +435,7 @@ export default function Content() {
             all fours in a crawl position, you will then extend your leg
             backwards from this position.
           </Typography>
-        </ExerciseItem>
+        </ExerciseItem> */}
       </ArticleMargin>
     </>
   );

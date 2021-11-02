@@ -41,6 +41,7 @@ export default function Content() {
         <WorkoutStructure />
         <DayTitle>DAY 1</DayTitle>
         <ExerciseItem
+          id="pressups"
           title="Press Ups 4x10"
           imgSrc={[pressups_down, pressups_up]}
           ourTip="Make sure to keep
@@ -48,20 +49,22 @@ export default function Content() {
           your neck and back."
         >
           <Typography paragraph>
-            Press-ups are your go-to compound movement for a home workout.
-            Nothing else works your upper body as much without equipment.
-            Press-ups predominantly use your pectorals and your triceps.
+            Press-ups should be your go-to chest movement for a home workout.
+            Nothing else works your upper body as much without equipment. It
+            focuses mainly on your chest and triceps but also recruits muscles
+            in your core, shoulders, and back.
           </Typography>
           <Typography paragraph>
             Keep your elbows tucked in to your sides to work your triceps more,
-            or flare them out wide to focus on your chest. Secondary muscles
-            such as front delts are also used but in a much smaller capacity. It
-            is okay to go on your knees if your chest gets too tired to do a
-            press up in the normal position as it will help you get a few more
-            reps in.
+            or flare them out wide to focus on your chest. It is okay to go on
+            your knees at any point if you feel your back arching – good form is
+            important to avoid injuries. If you haven't done so already, putting
+            your knees down is also a great way to squeeze in an extra few reps
+            at the end of your set.
           </Typography>
           <Typography paragraph>
-            To increase difficulty, put your feet on a raised surface.
+            If you feel like increasing the difficulty put your feet on a raised
+            surface like your sofa.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
@@ -71,13 +74,16 @@ export default function Content() {
         >
           <Typography paragraph>
             On to the first shoulder exercise. Shoulders are not to be neglected
-            by anyone serious about fitness, as they are used whenever you pick
-            something up, and as such are a secondary muscle group in
-            practically every upper body exercise. One side-effect of this
-            however is that lots of people tend to have really overdeveloped
-            front delts in comparison to the rest of their shoulder, if this is
-            an issue for you, please consider swapping in another side raise
-            exercise instead of this.
+            by anyone serious about fitness, as they are used in practically
+            every upper body exercise and are an important part of a balanced
+            physique and a healthy body.
+          </Typography>
+          <Typography paragraph>
+            One thing to keep in mind however is that many people tend to be
+            overdeveloped in the front of their shoulder in comparison to the
+            side and back. If this is an issue for you, consider swapping in
+            another exercise such as <a href="placeholder">side raises</a> or{" "}
+            <a href="placeholder">rear delt flyes</a>.
           </Typography>
           <Typography paragraph>
             To perform this exercise hold both weights above your shoulders with
@@ -89,21 +95,18 @@ export default function Content() {
         <ExerciseItem
           title="Dumbbell Rows 4x10"
           imgSrc={[dumbbell_row]}
-          ourTip="Keep your core tight to avoid strain on your lower back.
-        Avoid rounding your back."
+          ourTip="Keep your core tight and avoid rounding your back to avoid strain on your lower back."
         >
           <Typography paragraph>
             The back is probably the hardest muscle group to train at home. Pull
-            ups are the ideal movement, however, on the assumption that not
-            everybody has a pull-up bar in their house, we would recommend
-            dumbbell rows.
+            ups are the ideal movement, but given a pull up bar is not something
+            that everyone has at home we recommend dumbbell rows.
           </Typography>
           <Typography paragraph>
-            Lean with one side left or right of the bench and pull the weight
-            towards where your stomach joins your hip. If you have a proper
-            gym-style bench, this can be done lying with both arms at once,
-            lying face down on the bench to work both sides of your back at the
-            same time.
+            Stand to one side of a bench or chair. Put one hand on the surface
+            and pull the weight towards where your stomach joins your hip. If
+            you have a proper gym-style bench, you can do this with both arms at
+            once, lying face down on the bench.
           </Typography>
           <Typography paragraph>
             This exercise can be done with heavier weight, but make sure that
@@ -119,10 +122,10 @@ export default function Content() {
           on to your toes. Always keep your core tight!"
         >
           <Typography paragraph>
-            Squats are the staple movement for all of leg days! So this is no
-            exception. Squats are a great all round leg exercise, working your
-            quads, glutes, and hamstrings. They are also excellent for overall
-            mobility and flexibility.{" "}
+            Squats are the staple movement of all leg days and this is no
+            exception. Squats are a great all round leg exercise, working the
+            front and back of your legs as well as your glutes. They are also
+            excellent for overall mobility and flexibility.
           </Typography>
           <Typography paragraph>
             To do this exercise stand up straight and hold the weight close to
@@ -136,25 +139,20 @@ export default function Content() {
           title="Triceps Overhead Press 4x10"
           imgSrc={[overhead_press]}
           ourTip="If you are working one arm at a time, use your free arm to
-        hold your working-arm’s elbow in place. This reduces the pressure on your shoulder 
-        joint and is especially important for people with a history of shoulder issues like 
-        myself.
-
-        (I dislocated my shoulder in a bike accident)."
+        hold the other elbow in place."
         >
           <Typography paragraph>
-            Whether you're looking for big arms like Arnold, or just a toned
-            look, training your triceps is crucial. In fact, biceps only make up
-            about a third of the upper arm muscle mass, with the other two
-            thirds being made up by the triceps, so you hear that lads? If you
-            want full arms, get training triceps more! They already get some
-            secondary work in the press-ups so this should really finish them
-            off.
+            Whether you're looking for big arms like Arnold Schwarzenegger, or
+            just a toned look, training your triceps is crucial. In fact triceps
+            make up about two thirds of your upper arm so they really shouldn't
+            be neglected! They already get worked a bit in the press-ups so this
+            should really finish them off.
           </Typography>
           <Typography paragraph>
-            Your arm should be positioned above your head and the weight should
-            be lowered just behind your head and back up. You can do this
-            exercise either with both arms or one arm at a time.
+            Start with the weight above your head with your arm straight. Lower
+            the weight until you feel a stretch in your arm and then raise it
+            again. You can do this exercise either with both arms or one arm at
+            a time.
           </Typography>
         </ExerciseItem>
         <DayTitle>DAY 2</DayTitle>
@@ -166,31 +164,39 @@ export default function Content() {
         muscles."
         >
           <Typography paragraph>
-            Another classic home workout exercise. In general, no other exercise
-            will be as effective at isolating your chest muscles. If done right,
-            no other muscle groups will work hard during this exercise. The
-            exercise is most effective if you have a bench or you are suspended
-            above the ground slightly as this will allow for greater range of
-            motion.
+            This is another staple of a chest workout and is great for really
+            focusing on the chest muscles. The exercise is most effective when
+            done lying on a bench so that your rang of motion isn't limited but
+            it can be done lying on the floor as well.
           </Typography>
           <Typography paragraph>
-            To do this exercise lower the weights out to your side, stop just
-            before you feel a stretch in your shoulders, and then bring them
-            back up to the middle.
+            To do this exercise start on your back with the weights above your
+            chest. Lower the weights out to your side with a slight bend in your
+            arms, stopping just before you feel a stretch in your shoulders.
+            Then imagine you're giving someone a massive hug and bring the
+            weights back up to the middle.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
+          id="sideraises"
           title="Dumbbell Side Raises 4x10 or Gauntlet Set"
           imgSrc={[side_raises]}
-          ourTip="If your side delts are very tired at the end of one of the sets and
-        you know you will not be able to complete the exercise, then you do the
-        movement with no weight to achieve sufficient burnout."
+          ourTip="You can do extra reps of this movement with no weight at the end of the exercise to really tire out the muscles."
         >
           <Typography paragraph>
             An excellent exercise for strength and shoulder stability. Whether
             you're trying to tone up or build a set of impressive shoulders this
-            exercise is a must do. The standard set variation is an option, but
-            I love to do what I call a gauntlet set to really feel the burn.
+            exercise is a must.
+          </Typography>
+
+          <Typography paragraph>
+            This is a nice simple movement, start with your arms by your side,
+            then with a slight bend in your arms bring the weights out to the
+            side and back down again.
+          </Typography>
+          <Typography paragraph>
+            The standard set variation is an option, but I love to do what I
+            call a gauntlet set to really feel the burn.
           </Typography>
           <Typography paragraph>
             You start with a heavy weight where you can do about 5 reps of the
@@ -205,23 +211,23 @@ export default function Content() {
             rows={[
               {
                 weight: "10kg",
-                reps: "as many as poossible",
+                reps: "as many as possible",
               },
               {
                 weight: "8kg",
-                reps: "as many as poossible",
+                reps: "as many as possible",
               },
               {
                 weight: "4kg",
-                reps: "as many as poossible",
+                reps: "as many as possible",
               },
               {
                 weight: "8kg",
-                reps: "as many as poossible",
+                reps: "as many as possible",
               },
               {
                 weight: "10kg",
-                reps: "as many as poossible",
+                reps: "as many as possible",
               },
             ]}
           />
@@ -233,64 +239,64 @@ export default function Content() {
         <ExerciseItem
           title="Dumbbell Shrugs 4x10"
           imgSrc={[shrugs1, shrugs2]}
-          ourTip="Bend
-        forwards slightly to maximise the
-        activation of traps. As always make sure you don't round your back."
+          ourTip="Keep your arms straight to make sure your biceps aren't taking over some of the work."
         >
           <Typography paragraph>
-            Dumbbell shrugs are to target the traps on the top of the back. A
-            lot of people assume shrugs must be a shoulder exercise, but
-            actually it is a back exercise. Doing shrugs will grow your traps on
-            the front of your shoulders/neck which is why people assume they are
-            part of the shoulder grouping.
+            We do dumbbell shrugs to work the upper trapezius muscles between
+            your shoulder and neck. Strong traps are crucial for healthy stable
+            shoulders and are an underrated part of a great physique.
           </Typography>
           <Typography paragraph>
-            Traps have functional value as they are used a lot in general life
-            and the gym. Big compound lifts like Deadlift, Squat and Clean and
-            Jerk all use the traps in various ways. Traps also support the
-            shoulder joints by helping to hold your arms in their sockets.
+            To do this exercise let your arms hang heavy while holding the
+            weights. Bend forward slightly and shrug your shoulders up to your
+            ears and back down again. Don't worry if you make a stupid face
+            while doing these, it happens to us all.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
           title="Dumbbell Bicep Curls 4x10"
           imgSrc={[curls]}
-          ourTip="You can work your biceps even harder by cheating a couple of reps with a bit of a swing once you can't do any more with strict form"
+          ourTip="You can work your biceps even harder by doing a couple of reps with a bit of a swing once you can't do any more with strict form"
         >
           <Typography paragraph>
-            Here we are, the one most of you were looking for. Asking how much
-            you can curl is a staple in gyms worldwide, second only to "How much
-            do you bench?" because of this many people make the mistake of
-            curling too much weight.
+            The bicep is a relatively small muscle, so make sure you're not
+            letting your ego take over here and using too much weight. Focus on
+            not letting your shoulders take over the movement just to get the
+            weight up. Keep them relaxed and really focus on feeling your biceps
+            flex.
           </Typography>
           <Typography paragraph>
-            The bicep is a relatively small muscle, so focus on not letting your
-            shoulders take over the movement just to get the weight up. Keep
-            them relaxed and really focus on feeling your biceps flex.
+            Start with the weight by your side, keep your elbows tucked in
+            against your chest and lift the weight up as far as it can without
+            your elbow moving forward. Squeeze for a second and then let the
+            weight back down.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
           title="Dumbbell Weighted Lunge 4x10"
           imgSrc={[dumbbell_lunge]}
-          ourTip="Keep your back
-        straight and lean into the movement, it should be smooth with your weight equally balanced between your feet."
+          ourTip="Your weight should be equally balanced between your feet."
         >
           <Typography paragraph>
-            Now it is important not to be ashamed of the prospect of doing
-            weighted lunges until you cry. This is why we do workouts from home.
-            Seriously though, it is a very tough movement to do repeatedly as it
-            really puts pressure on your hamstrings and quads. If you don’t want
-            to brag about doing Dumbbell Weighted Lunges, that’s on you, but the
-            exercise is legit and will fatigue your muscles to a great extent.
+            Dumbbell lunges are a deceptively difficult movement that requires a
+            good amount of balance as well as strength, so don’t be disheartened
+            if you have to start off with relatively light weights. This means
+            that they’re great for at home workouts because you don’t need a lot
+            of expensive equipment to work your legs hard.
           </Typography>
           <Typography paragraph>
-            Alternating legs and going until failure is an option for the
-            sado-masichists amongst us but for normal people 4x10 will do, maybe
-            even 3x10 if it’s your first time. Don’t dip too much lower than 90
-            degrees unless you have the flexibility to do so. If you push legs
-            hard enough after not training for a while, you will not be able to
-            move properly the morning after. I have a friend who still tells
-            people about his Mum having to put his socks on his feet for him the
-            morning after his first leg day.
+            When you lunge down try to keep your weight spread evenly between
+            your feet. The goal is to stop just before your knee touches the
+            ground but if that does not feel comfortable for you then feel free
+            to only go as low as you need.
+          </Typography>
+          <Typography paragraph>
+            If you push legs hard enough especially if you are just getting
+            started or are returning after not training for a while, you will
+            not be able to move properly the morning after. I have a friend who
+            still tells people about his Mum having to help him put his socks on
+            the morning after his first leg day so take it easy as your learn
+            your body’s limits.
           </Typography>
         </ExerciseItem>
         <DayTitle>DAY 3</DayTitle>
@@ -304,13 +310,20 @@ export default function Content() {
           <Typography paragraph>
             The Romanian deadlift or “straight-leg” deadlift is the staple of
             hamstring training due to its intensity and focus on your hamstring
-            muscles.
+            muscles. It's a perfect at home exercise to work your legs without
+            much equiptment.
           </Typography>
           <Typography paragraph>
-            Remember to only bend as far forward as possible, without straining
-            or bending your back. You should feel a small tug on the hamstring,
-            do not try and touch the floor if you do not have the flexibility.
-            Your range of motion with this exercise should improve over time.
+            To do this exercise hold the dumbbells with straight arms and have a
+            slight bend in your knees to protect them. Bend as far forward as
+            possible, without straining or bending your back, you should feel a
+            small tug on the hamstring. Then imagine pushing the ground away
+            from you and stand back up straight.
+          </Typography>
+          <Typography paragraph>
+            Avoid putting your weight on your toes and do not try and touch the
+            floor if you do not have the flexibility. Your range of motion with
+            this exercise should improve over time.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
@@ -322,30 +335,30 @@ export default function Content() {
         >
           <Typography paragraph>
             The second most fun dumbbell exercise for growing biceps. The hammer
-            curl targets the longer head of the two bicep heads and is excellent
-            thickening exercise for those of us whose bodies resemble
-            freshly-shaved sheep.
+            curl targets the longer head of the two bicep heads and is crucial
+            for developing that full bicep shape.
           </Typography>
           <Typography paragraph>
-            This exercise is a lot like the standard bicep curl, but rather than
-            twisting your wrist so that you finish the movement with your parms
-            facing the ceiling, both of your palms should stay facing towards
-            your side for the entire exercise.
+            This exercise is a lot like the standard bicep curl but your palms
+            should stay facing eachother for the entire exercise. Like with
+            standard curls keep your shouders relaxed to ensure your biceps are
+            doing all of the work.
           </Typography>
           <Typography paragraph>
             Hammer curls can usually be done with higher weights than their
-            conventional cousin, purely because the wrist is twisted, so more
-            weight can be loaded through it. People with wrist issues should
-            consider only doing hammer curls and forgoing any kind of barbell
-            work where the wrist is under more pressure.
+            conventional cousin, and are a great exercise for people whose
+            wrists hurt during standard barbell or dumbbell curls.
           </Typography>
         </ExerciseItem>
         <Typography paragraph style={{ fontStyle: "italic", paddingTop: 40 }}>
           These last two exercises have already been explained earlier on in the
           routine so I'm not going to go into more detail about them.
         </Typography>
-        <ExerciseItem title="Press Ups 4x10" />
-        <ExerciseItem title="Dumbbell Side Raises 4x10 or Gauntlet Set" />
+        <ExerciseItem to="#pressups" title="Press Ups 4x10" />
+        <ExerciseItem
+          to="#sideraises"
+          title="Dumbbell Side Raises 4x10 or Gauntlet Set"
+        />
       </ArticleMargin>
     </>
   );

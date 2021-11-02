@@ -69,19 +69,20 @@ export default function PrimarySearchAppBar({ darkState, handleThemeChange }) {
       <animated.div className={classes.navBar} style={springProps}>
         <Grid style={{ height: "100%" }} container alignItems="center">
           <Grid item xs={2} />
-          <Grid container item xs={8} justify="space-around">
+          <Grid
+            name="navbar-button-container"
+            container
+            item
+            xs={8}
+            justify="space-around"
+          >
             {config.navBarItems.map(({ label, link }) => (
               <Grid
+                name={`nav-bar-link-to-${label.toLowerCase()}`}
                 item
                 className={classes.navBarItemWrapper}
                 component={Link}
                 to={link}
-                style={
-                  // pathname.toLowerCase() === `/${label.toLowerCase()}`
-                  //   ? { borderBottom: "solid black" }
-                  //   :
-                  {}
-                }
               >
                 <Grid>
                   <span className={classes.marginAuto}>

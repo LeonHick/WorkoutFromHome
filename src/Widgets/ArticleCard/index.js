@@ -30,11 +30,12 @@ export default function ArticleCard({
   cardTitle,
   cardSubtitles,
   backgroundColor,
+  showProgress,
 }) {
   const classes = useStyles();
 
   return (
-    <Grid item xs={4}>
+    <Grid item sm={12} md={6} lg={4}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div
@@ -54,7 +55,9 @@ export default function ArticleCard({
           <div
             className={classes.cardTextPadding}
             style={
-              backgroundColor ? { border: `solid ${backgroundColor}` } : {}
+              backgroundColor && showProgress
+                ? { border: `solid ${backgroundColor}` }
+                : {}
             }
           >
             <CardTitle>{cardTitle}</CardTitle>

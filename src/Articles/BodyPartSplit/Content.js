@@ -1,23 +1,7 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
 import placeholder from "../../Images/Home.jpg";
-import pressups_down from "../../Images/pressups_down_1.jpg";
-import pressups_up from "../../Images/pressups_up_1.jpg";
-import dumbbell_row from "../../Images/dumbbell_row.jpg";
-import goblet_squat from "../../Images/goblet_squat_front_woman.jpg";
-import dumbbell_flyes from "../../Images/dumbbell_flyes.jpg";
-import dumbbell_flyes2 from "../../Images/dumbbell_flyes2.jpg";
-import side_raises from "../../Images/side_raises.jpg";
-import dumbbell_shoulder_press from "../../Images/dumbell_shoulder_press_landscape.jpg";
-import overhead_press from "../../Images/overhead_press.jpg";
-import shrugs1 from "../../Images/shrugs1.jpg";
-import shrugs2 from "../../Images/shrugs2.jpg";
-import curls from "../../Images/curls.jpg";
-import dumbbell_lunge from "../../Images/dumbbell_lunge.jpg";
-import hammer_curl1 from "../../Images/hammer_curl1.jpg";
-import hammer_curl2 from "../../Images/hammer_curl2.jpg";
-import SLDeadlift1 from "../../Images/SLDeadlift.jpg";
-import SLDeadlift2 from "../../Images/SLDeadlift2.jpg";
+import dumbbell_bench from "../../Images/Dumbbell bench 2.png";
 import { useStyles } from "../../Styles";
 import {
   ArticleTitle,
@@ -30,6 +14,16 @@ import Equipment from "./Equipment";
 import WorkoutStructure from "./Structure";
 import ArticleMargin from "../Components/ArticleMargin.js";
 import { NoteToSelf } from "../../Widgets";
+import pressups_down from "../../Images/pressups_down_1.jpg";
+import pressups_up from "../../Images/pressups_up_1.jpg";
+import dumbbell_flyes from "../../Images/dumbbell_flyes.jpg";
+import dumbbell_flyes2 from "../../Images/dumbbell_flyes2.jpg";
+import goblet_squat from "../../Images/goblet_squat.png";
+import lunge from "../../Images/dumbbell_lunge.jpg";
+import calf_raise from "../../Images/calf raises 1.png";
+import prone_leg_raises from "../../Images/prone_leg_raises.png";
+import SLDeadlift from "../../Images/single_leg_deadlift.png";
+import curls_old from "../../Images/curls_old.png";
 
 export default function Content() {
   const classes = useStyles();
@@ -43,7 +37,7 @@ export default function Content() {
         <DayTitle>DAY 1 - Chest</DayTitle>
         <ExerciseItem
           title="Dumbbell Bench Press 4x10"
-          imgSrc={[placeholder]}
+          imgSrc={[dumbbell_bench]}
           ourTip="The best way is to stop the movement before they touch and immediately start the next rep."
         >
           <Typography paragraph>
@@ -62,7 +56,7 @@ export default function Content() {
         </ExerciseItem>
         <ExerciseItem
           title="Press Ups 4x10"
-          imgSrc={[placeholder]}
+          imgSrc={[pressups_down, pressups_up]}
           ourTip="Make sure to keep your head in a neutral position and your core tight to avoid strain on your neck and back. "
         >
           <Typography paragraph>
@@ -100,11 +94,13 @@ export default function Content() {
             finisher, but every exercise cannot be a finisher.
           </Typography>
         </ExerciseItem>
+
         <ExerciseItem
           title="Single-Arm Hammer Fly 3x5/8"
-          imgSrc={[placeholder]}
+          imgSrc={[dumbbell_flyes, dumbbell_flyes2]}
           ourTip="Do not go too heavy in weight or your shoulder will start to ache because the strain is too much, like the last exercise this is about contracting the pectoral more than the weight you are lifting."
         >
+          <NoteToSelf>Change this to two arm</NoteToSelf>
           <Typography paragraph>
             This is a more broken-down and intense movement than the dumbbell
             fly we have already done
@@ -117,97 +113,14 @@ export default function Content() {
             grip.
           </Typography>
         </ExerciseItem>
-        <DayTitle>DAY 2 - Legs</DayTitle>
-        <ExerciseItem
-          title="Dumbbell Squats 4x10"
-          imgSrc={[placeholder]}
-          ourTip="Keep your back straight and core tight to avoid any lower back pain."
-        >
-          <Typography paragraph>
-            Squats are famously the most reliable leg day movement. They are so
-            intense as a compound exercise that they actually raise your
-            testosterone levels if done regularly.
-          </Typography>
-          <Typography paragraph>
-            Legs should be shoulder-width apart and you should lower yourself
-            towards the ground, stopping when you are parallel to the ground.
-            Remember to hold dumbbells in each hand.
-          </Typography>
-        </ExerciseItem>
-        <ExerciseItem
-          title="Dumbbell Lunges 4x10"
-          imgSrc={[placeholder]}
-          ourTip="Keep your back straight and lean into the movement, it should be smooth."
-        >
-          <Typography paragraph>
-            This is the most humbling exercise in terms of, you can never get as
-            low as doing dumbbell lunges until you cry and then your housemate
-            brings their attractive course mate over just in time to see you in
-            a puddle of your own tears and shame…. Moving on from how
-            suspiciously specific that was to tell you not to dip too far below
-            parallel.
-          </Typography>
-        </ExerciseItem>
-        <ExerciseItem
-          title="Dumbbell Calf-Raises 4x10"
-          imgSrc={[placeholder]}
-          ourTip="A step is a great place for calf raises because you have space to really stretch your calves."
-        >
-          <Typography paragraph>
-            This is the easiest exercise to do ever besides no exercise. You use
-            your calves every day to move anywhere, so they are good at
-            movements. You simply stand and extend your legs up to your tip
-            toes, then back down.
-          </Typography>
-          <Typography paragraph>
-            Here is where I have to acknowledge that some people struggle to
-            grow their calves and are cursed to have small calves. I must
-            confess that I have always been blessed with big calves, however, do
-            not worry, having big calves is not everything everybody says it is…
-            It is everything they say it is and more!
-          </Typography>
-        </ExerciseItem>
-        <ExerciseItem
-          title="Prone Leg-Raise 4x10"
-          imgSrc={[placeholder]}
-          ourTip="Do not lift your head up when doing this exercise, this puts unnecessary strain on your spine."
-        >
-          <Typography paragraph>
-            This one is straight out of the bums n tums guidebook. An exercise
-            that looks more comfortable in a yoga retreat than in a gym, but it
-            is legitimate. You lie face down on a mat and raise your legs in an
-            alternating fashion up and out behind you. This is a glute and
-            hamstring exercise, and it is very tough.
-          </Typography>
-          <Typography paragraph>
-            Doing this exercise one leg at a time is a great variation if it's
-            too hard to do both legs at once.
-          </Typography>
-        </ExerciseItem>
-        <ExerciseItem
-          title="Box Squats 4x10"
-          imgSrc={[placeholder]}
-          ourTip="Your box should be tall enough so that your thighs are roughly parallel to the floor as you sit on it."
-        >
-          <Typography paragraph>
-            This exercise probably needs to be weightless, because by this point
-            if you can hold weights and still make your sets of 10 comfortably
-            then you are a beast.
-          </Typography>
-          <Typography paragraph>
-            The exercise is how it sounds, you put a box down and squat until
-            your bottom touches the box and then rise back up. A rest on the box
-            is sometimes needed. Do not injure yourself with too much overload,
-            if you reach this point and your legs are not stable, then just
-            stop. DON’T INJURE YOURSELF FOR EGO.
-          </Typography>
-        </ExerciseItem>
+
         <DayTitle>DAY 3 - arms</DayTitle>
         <ExerciseItem
           title="Bicep Curl 4x10"
-          imgSrc={[placeholder]}
-          ourTip="Flare your wrists at the end of the movement slightly to work the outer bicep head more and focus on the separation."
+          imgSrc={[curls_old]}
+          ourTip="a tip"
         >
+          <NoteToSelf>This needs completely rewriting</NoteToSelf>
           <Typography paragraph>
             Staple one of the workout world, except maybe bench press. However,
             as I have elaborated on in a previous article, the hype around the
@@ -320,7 +233,8 @@ export default function Content() {
             about the lower volume on shoulder day should not be, the gauntlet
             set will be enough to fatigue you sufficiently, I promise.
           </Typography>
-          <NoteToSelf>Gauntlet stuff</NoteToSelf>
+          import pressups_down from "../../Images/pressups_down_1.jpg"; import
+          pressups_up from "../../Images/pressups_up_1.jpg";
         </ExerciseItem>
         <ExerciseItem
           title="Rear Delt Flyes 4x10"

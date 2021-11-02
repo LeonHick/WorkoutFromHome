@@ -1,12 +1,27 @@
 import { Typography, Grid } from "@material-ui/core";
 import React from "react";
 import { useStyles } from "../../Styles";
+import { HashLink as Link } from "react-router-hash-link";
+import { useHistory } from "react-router";
 
-export default function ExerciseItem({ title, children, imgSrc, ourTip }) {
+export default function ExerciseItem({
+  title,
+  children,
+  imgSrc,
+  ourTip,
+  to,
+  id,
+}) {
   const classes = useStyles();
+  const history = useHistory();
+  const { pathname, search } = history.location;
   return (
     <div style={{ paddingTop: 40 }}>
       <Typography
+        id={id}
+        {...(to && { component: Link, to: pathname + search + to })}
+        // component={Link}
+        // to={pathname + search + to}
         variant="h6"
         style={children && { textDecoration: "underline", paddingBottom: 20 }}
       >
@@ -18,6 +33,7 @@ export default function ExerciseItem({ title, children, imgSrc, ourTip }) {
           {imgSrc &&
             imgSrc.map((src, i) => (
               <img
+                key={`exercise-item-${title}-image-${i}`}
                 src={src}
                 alt={`${title} ${i + 1}`}
                 style={{ width: `${100 / imgSrc.length}%` }}

@@ -24,12 +24,12 @@ const Day2 = [
     reps: "10",
   },
   { exercise: "Dumbbell Calf-Raises", sets: 4, reps: 10 },
+  { exercise: "Straight Leg Deadlifts", sets: 4, reps: "10" },
   {
     exercise: "Prone Leg Raise",
-    sets: 4,
-    reps: "10",
+    sets: 3,
+    reps: "12",
   },
-  { exercise: "Dumbbell Box-Squat", sets: 4, reps: "As Many Reps As Possible" },
 ];
 
 const Day3 = [

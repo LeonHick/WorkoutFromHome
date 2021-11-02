@@ -4,47 +4,65 @@ import { RoutineTable } from "../Components";
 
 const headers = ["exercise", "sets", "reps"];
 
-const Day1 = [
-  { exercise: "Rear Delt Flyes", sets: 4, reps: 10 },
-  { exercise: "Dumbbell Rows", sets: 4, reps: 10 },
-  { exercise: "Inverted Rows", sets: 4, reps: 10 },
+const Push1 = [
+  { exercise: "Pressups", sets: 3, reps: "As many as possible" },
+  { exercise: "Shoulder Press", sets: 4, reps: 10 },
+  { exercise: "Dumbbell Flys", sets: 4, reps: 10 },
   {
-    exercise: "Bicep Curls",
+    exercise: "Overhead Press",
     sets: 4,
     reps: 10,
+  },
+];
+
+const Pull1 = [
+  { exercise: "Dumbbell Curls", sets: 4, reps: 10 },
+  {
+    exercise: "Dumbbell Rows",
+    sets: 4,
+    reps: 8,
+  },
+  { exercise: "Upright Rows", sets: 3, reps: 8 },
+  {
+    exercise: "Side Raises",
+    sets: 4,
+    reps: "10",
+    other: "or gauntlet - explained below",
+  },
+];
+
+const Legs1 = [
+  { exercise: "Dumbbell Goblet Squat", sets: 4, reps: 10 },
+  { exercise: "Dumbbell Calf Raises", sets: 4, reps: 10 },
+  {
+    exercise: "Single Leg Romanian Deadlift",
+    sets: 4,
+    reps: "10",
+  },
+];
+
+const Push2 = [
+  { exercise: "Dumbbell Bench Press", sets: 4, reps: 10 },
+  { exercise: "Narrow Arm Pressups", sets: 3, reps: "As many as possible" },
+  { exercise: "Tricep Dips", sets: 4, reps: 10 },
+];
+
+const Pull2 = [
+  {
+    exercise: "Dumbbell Rows",
+    sets: 4,
+    reps: "10",
   },
   { exercise: "Hammer Curls", sets: 4, reps: 10 },
+  { exercise: "Superman Holds", sets: 4, reps: "As long as possible" },
+  { exercise: "Rear Delt Flys", sets: 4, reps: 12 },
 ];
 
-const Day2 = [
-  { exercise: "Dumbbell Bench Press", sets: 4, reps: 10 },
-  {
-    exercise: "Dumbbell Flyes",
-    sets: 4,
-    reps: "10",
-  },
-  { exercise: "Tricep Extensions", sets: 4, reps: 10 },
-  {
-    exercise: "Tricep Dips",
-    sets: 3,
-    reps: "As Many Reps as Possible",
-  },
-  { exercise: "Side Raises", sets: 4, reps: 10 },
-];
-
-const Day3 = [
-  { exercise: "Dumbbell Squat", sets: 4, reps: 10 },
+const Legs2 = [
+  { exercise: "Piston Squat", sets: 3, reps: "As many reps as possible" },
   { exercise: "Dumbbell Lunge", sets: 4, reps: 10 },
-  {
-    exercise: "Dumbbell Romanian Deadlift",
-    sets: 4,
-    reps: "10",
-  },
-  {
-    exercise: "Calf Raises",
-    sets: 4,
-    reps: 10,
-  },
+  { exercise: "Dumbbell Calf Raises", sets: 4, reps: 10 },
+
   { exercise: "Prone Leg Raise", sets: 4, reps: 10 },
 ];
 
@@ -58,22 +76,40 @@ export default function WorkoutStructure() {
       <br />
       <Grid container spacing={2}>
         <Grid item xs={2} direction="column" container justify="center">
-          <Typography>Days 1 & 4 - Pull</Typography>
+          <Typography>Day 1 - Push</Typography>
         </Grid>
         <Grid item xs={10}>
-          <RoutineTable rows={Day1} {...{ headers }} />
+          <RoutineTable rows={Push1} {...{ headers }} />
         </Grid>
         <Grid item xs={2} direction="column" container justify="center">
-          <Typography>Days 2 & 5 - Push</Typography>
+          <Typography>Day 2 - Pull</Typography>
         </Grid>
         <Grid item xs={10}>
-          <RoutineTable rows={Day2} {...{ headers }} />
+          <RoutineTable rows={Pull1} {...{ headers }} />
         </Grid>
         <Grid item xs={2} direction="column" container justify="center">
-          <Typography>Days 3 & 6 - Legs</Typography>
+          <Typography>Day 3 - Legs</Typography>
         </Grid>
         <Grid item xs={10}>
-          <RoutineTable rows={Day3} {...{ headers }} />
+          <RoutineTable rows={Legs1} {...{ headers }} />
+        </Grid>
+        <Grid item xs={2} direction="column" container justify="center">
+          <Typography>Day 4 - Push</Typography>
+        </Grid>
+        <Grid item xs={10}>
+          <RoutineTable rows={Push2} {...{ headers }} />
+        </Grid>
+        <Grid item xs={2} direction="column" container justify="center">
+          <Typography>Day 5 - Pull</Typography>
+        </Grid>
+        <Grid item xs={10}>
+          <RoutineTable rows={Pull2} {...{ headers }} />
+        </Grid>
+        <Grid item xs={2} direction="column" container justify="center">
+          <Typography>Day 6 - Legs</Typography>
+        </Grid>
+        <Grid item xs={10}>
+          <RoutineTable rows={Legs2} {...{ headers }} />
         </Grid>
       </Grid>
     </div>

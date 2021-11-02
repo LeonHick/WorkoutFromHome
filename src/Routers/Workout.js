@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { FullBodyArticle, PPLLong, BodyPartSplit } from "../Articles";
+import {
+  FullBodyArticle,
+  PPLLong,
+  BodyPartSplit,
+  LegWorkout,
+} from "../Articles";
 import { NoteFromJosh } from "../Articles/Components";
 
 export default function WorkoutRouter(history) {
@@ -21,6 +26,8 @@ export default function WorkoutRouter(history) {
         return <PPLLong />;
       case "bodypartsplit":
         return <BodyPartSplit />;
+      case "legs":
+        return <LegWorkout />;
       default:
         return "no workout found";
     }
