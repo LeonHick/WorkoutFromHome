@@ -85,34 +85,34 @@ export default function WorkoutStructure() {
       <br />
       <br />
       <Grid container spacing={2}>
-        <Grid item xs={2} direction="column" container justify="center">
+        <Grid item xs={12} sm={2} direction="column" container justify="center">
           <Typography>Day 1 -Chest</Typography>
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={12} sm={10}>
           <RoutineTable rows={Day1} {...{ headers }} />
         </Grid>
-        <Grid item xs={2} direction="column" container justify="center">
+        <Grid item xs={12} sm={2} direction="column" container justify="center">
           <Typography>Day 2 - Legs</Typography>
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={12} sm={10}>
           <RoutineTable rows={Day2} {...{ headers }} />
         </Grid>
-        <Grid item xs={2} direction="column" container justify="center">
+        <Grid item xs={12} sm={2} direction="column" container justify="center">
           <Typography>Day 3 - Arms</Typography>
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={12} sm={10}>
           <RoutineTable rows={Day3} {...{ headers }} />
         </Grid>
-        <Grid item xs={2} direction="column" container justify="center">
+        <Grid item xs={12} sm={2} direction="column" container justify="center">
           <Typography>Day 4 - Shoulders</Typography>
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={12} sm={10}>
           <RoutineTable rows={Day4} {...{ headers }} />
         </Grid>
-        <Grid item xs={2} direction="column" container justify="center">
+        <Grid item xs={12} sm={2} direction="column" container justify="center">
           <Typography>Day 5 - Back</Typography>
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={12} sm={10}>
           <RoutineTable rows={Day5} {...{ headers }} />
         </Grid>
       </Grid>

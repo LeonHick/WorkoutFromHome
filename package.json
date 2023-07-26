@@ -1,6 +1,6 @@
 {
-  "name": "gymfromhome",
-  "homepage": "http://gymfromhome.org/",
+  "name": "workoutfromhome",
+  "homepage": "https://workoutfromhome.uk/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,19 +10,23 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "chai": "^4.3.4",
-    "mocha": "^8.4.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "mocha": "^10.2.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.4.3",
-    "react-scripts": "4.0.1",
+    "react-scripts": "^5.0.1",
     "react-spring": "^8.0.27",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "dev": "SET REACT_APP_SHOW_PROGRESS=true && react-scripts start",
     "comingsoon": "SET REACT_APP_COMMINGSOON=true && react-scripts start",
+    "simple": "SET REACT_APP_SIMPLE=true && react-scripts start",
+    "simple-dev": "SET REACT_APP_SIMPLE=true && SET REACT_APP_SHOW_PROGRESS=true && react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build comingsoon": "SET REACT_APP_COMMINGSOON=true && react-scripts build",
     "test": "cd Testing && mocha index --timeout 10000",
     "eject": "react-scripts eject"
   },

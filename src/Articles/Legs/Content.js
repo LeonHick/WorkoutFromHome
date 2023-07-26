@@ -5,19 +5,22 @@ import Intro from "./Intro";
 import Equipment from "./Equipment";
 import WorkoutStructure from "./Structure";
 import ArticleMargin from "../Components/ArticleMargin.js";
-import goblet_squat from "../../Images/goblet_squat.png";
-import lunge from "../../Images/lunge_2.png";
-import calf_raise from "../../Images/calf raises 1.png";
-import prone_leg_raises from "../../Images/prone_leg_raises.png";
-import SLDeadlift from "../../Images/single_leg_deadlift.png";
+import goblet_squat from "../../Images/goblet_squat.jpg";
+import lunge from "../../Images/lunge_2.jpg";
+import calf_raise from "../../Images/calf_raises_1.jpg";
+import prone_leg_raises from "../../Images/prone_leg_raises.jpg";
+import SLDeadlift from "../../Images/single_leg_deadlift.jpg";
+import squat from "../../Images/squat2.jpg";
+import ArticleImage from "../Components/Image";
 
 export default function Content() {
   return (
     <>
       <ArticleTitle>Feel the burn - leg workout</ArticleTitle>
+      <ArticleImage src={squat} />
       <ArticleMargin>
         <Intro />
-        <Equipment />
+        {/* <Equipment /> */}
         <WorkoutStructure />
         <ExerciseItem
           title="Dumbbell Goblet Squats 4x10"
@@ -25,17 +28,16 @@ export default function Content() {
           ourTip="Imagine spreading the floor apart with your feet."
         >
           <Typography paragraph>
-            Squats are the boss of all leg exercise so you bet they’re first on
-            this list. They can be such an intense exercise that they can boost
+            Squats are the boss of all leg exercises so you bet they’re first on
+            this list. They are such an intense exercise that they can boost
             your hormone levels to make building strength and muscle in all
             areas of your body easier. It’ll even get your heart working!
           </Typography>
           <Typography paragraph>
-            For this exercise your legs should be roughly shoulder-width apart
-            but they can be wider if that feels more comfortable for you. Then
-            keeping your weight on your heels sit backwards as if you’re sitting
-            down into a chair. Go as low as you can without your back bending
-            and then pushing through your heels stand back up.
+            Place your legs roughly shoulder-width apart, but they can be wider
+            if that feels more comfortable for you. Sit backwards as if you’re
+            sitting down into a chair. Go as low as you can without your back
+            bending and then pushing through your heels stand back up.
           </Typography>
           <Typography paragraph>
             It is important with squats to maintain excellent form to avoid
@@ -45,12 +47,12 @@ export default function Content() {
           </Typography>
         </ExerciseItem>
         <ExerciseItem
-          title="Dumbbell Lunges 4x10"
+          title="Dumbbell Lunges 4x8"
           imgSrc={[lunge]}
           ourTip="The angle of your knees in your lunge should be about 90 degrees."
         >
           <Typography paragraph>
-            Like squats, lunges are a great compound leg exercise as it works
+            Like squats, lunges are a great compound leg exercise, they work
             many of your leg muscles at once. Because it is a difficult movement
             that requires a lot of balance, you don’t need to use a huge amount
             of weight. This makes it the perfect leg exercise to use at home.
@@ -92,7 +94,7 @@ export default function Content() {
           </Typography> */}
         </ExerciseItem>
         <ExerciseItem
-          title="Single Leg Romanian Deadlift 4x10"
+          title="Single Leg Romanian Deadlift 4x8"
           imgSrc={[SLDeadlift]}
           ourTip="Squeeze your glutes together as you stand up straight!"
         >
@@ -104,10 +106,14 @@ export default function Content() {
           </Typography>
           <Typography paragraph>
             To do this exercise keep your legs relatively straight with a very
-            slight bend in the knee, lean forward at the waist letting the leg
+            slight bend in the knee. Lean forward at the waist letting the leg
             that isn't on the floor rise up behind you. Bend until you feel a
             slight pull in the hamstring, then stand back up straight. You can
             do this exercise with or without weights depending on your level.
+          </Typography>
+          <Typography paragraph>
+            Remember to keep your core engaged by lightly pulling your belly
+            button towards your spine. This helps to protect your back.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
@@ -118,18 +124,22 @@ export default function Content() {
           <Typography paragraph>
             This exercise may look deceptively easy but it's all about
             contracting the right muscles. Lie down flat on your front, and with
-            straight legs raise your legs one at a time up behind you. Really
-            try and focus on feeling the muscle squeeze!
-          </Typography>
-          <Typography paragraph>
-            Don't worry if you don't have a band to wrap around your ankles, you
-            can do this exercise with just your bodyweight. Alternatively if you
-            have some ankle weights lying around they are perfect to make this
-            exercise harder.
+            straight legs raise up one leg at a time up behind you. Really try
+            and focus on feeling the muscle squeeze!
           </Typography>
           <Typography paragraph>
             You can even do this exercise on your elbows in a plank position to
             work your abs as well as your glutes and hamstrings.
+          </Typography>
+          <Typography paragraph>
+            <Typography style={{ fontWeight: "bold" }}>
+              To increase the difficulty:
+            </Typography>
+            Add ankle weights or hold your leg up for a few seconds each time.
+            <Typography style={{ fontWeight: "bold" }}>
+              To decrease the difficulty:
+            </Typography>
+            Do the exercise standing up, kicking your leg out behind you.
           </Typography>
         </ExerciseItem>
       </ArticleMargin>

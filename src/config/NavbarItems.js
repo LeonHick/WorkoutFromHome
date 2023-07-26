@@ -15,14 +15,14 @@ const items = [
   //   label: "GEAR",
   //   link: "/gear",
   // },
-  {
-    label: "WARMUPS & STRETCHES",
-    link: "/stretches",
-  },
-  {
-    label: "ABOUT US",
-    link: "/aboutus",
-  },
+  // {
+  //     label: "WARMUPS & STRETCHES",
+  //     link: "/stretches",
+  //   },
+  //   {
+  //     label: "ABOUT US",
+  //     link: "/aboutus",
+  // },
 ];
 
 export default items;

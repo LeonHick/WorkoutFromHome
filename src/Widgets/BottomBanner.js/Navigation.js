@@ -26,7 +26,7 @@ function returnGridItems(classes) {
 
 export default function FooterNavigation() {
   const classes = useStyles();
-  return (
+  return process.env.REACT_APP_SIMPLE ? null : (
     <Grid container>
       <Grid item xs={3} />
       <Grid container item xs={6} justify="space-around">

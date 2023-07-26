@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, makeStyles } from "@material-ui/core";
+import { Grid, makeStyles, Typography } from "@material-ui/core";
 import ContactDetails from "./Contact";
 import Branding from "./Branding";
 import FooterNavigation from "./Navigation";
@@ -24,13 +24,13 @@ export default function BottomBanner() {
       >
         <Branding classes={classes} />
       </Grid>
-      <Grid
+      {/* <Grid
         container
         item
         xs={12} //style={{ backgroundColor: "blue" }}
       >
-        <FooterNavigation classes={classes} />
-      </Grid>
+        <FooterNavigation classes={classes} /> 
+      </Grid> */}
       <Grid
         item
         xs={12} //style={{ backgroundColor: "yellow" }}

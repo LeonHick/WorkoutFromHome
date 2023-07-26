@@ -7,12 +7,17 @@ import backgroundBlur from "../Images/HomeBlurred.JPG";
 const landingHeroStandard = {
   zIndex: -1,
   width: "100%",
+  height: "100%",
   position: "absolute",
   backgroundImage: `url(${background})`,
   backgroundPosition: "center" /* Center the image */,
   backgroundRepeat: "no-repeat" /* Do not repeat the image */,
   backgroundSize:
     "cover" /* Resize the background image to cover the entire container */,
+};
+
+const landingHeroPhone = {
+  backgroundPosition: "right" /* Center the image */,
 };
 
 export default makeStyles((theme) => ({
@@ -45,8 +50,13 @@ export default makeStyles((theme) => ({
     // letterSpacing: "5px",
   },
   landingBackground: {
-    height: "calc(100% - 40px);",
+    height: process.env.REACT_APP_SIMPLE ? "100%" : "calc(100% - 40px);",
     ...landingHeroStandard,
+  },
+  landingBackgroundPhone: {
+    height: process.env.REACT_APP_SIMPLE ? "100%" : "calc(100% - 40px);",
+    ...landingHeroStandard,
+    ...landingHeroPhone,
   },
   landingBackgroundComingSoon: {
     height: "100%",

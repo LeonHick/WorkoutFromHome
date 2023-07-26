@@ -6,11 +6,10 @@ export default function Intro() {
   return (
     <>
       <Typography paragraph variant="body1">
-        If you’re looking for a way to push through a stubborn plateau or you
-        have ever wanted to fit more workouts into your week, then this routine
-        is for you. With this intensive plan you’ll be training six days a week
-        with the sessions split into three rough categories: push movements,
-        pull movements, and leg exercises.
+        If you’re looking for a way to push through a stubborn plateau then this
+        routine is for you. With this intensive plan you’ll be training six days
+        a week with the sessions split into three rough categories: push
+        movements, pull movements, and leg exercises.
       </Typography>
       <Typography paragraph variant="body1">
         It is possible to do so many sessions because of the push pull legs
@@ -19,14 +18,18 @@ export default function Intro() {
       </Typography>
       <Typography paragraph variant="body1">
         The large volume per week, per muscle group can be a great catalyst for
-        progress, but it should be said this is a big workload so make sure that
-        you rest your body outside of your sessions, get enough sleep, and be
-        aware of the signs of overtraining.
+        progress, but it should be said that this is a big workload so make sure
+        that you rest your body outside of your sessions, get enough sleep, and
+        be aware of the signs of overtraining.
       </Typography>
       <Typography paragraph variant="body1">
         When done carefully I think that this routine is one of the most
         effective, efficient methods of training, especially if you are an
         experienced lifter.
+      </Typography>
+      <Typography paragraph variant="body1">
+        As always remember that avoiding setting unreasonable goals is essential
+        for wellbeing.
       </Typography>
     </>
   );

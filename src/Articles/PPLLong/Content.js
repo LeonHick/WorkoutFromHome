@@ -1,23 +1,20 @@
 import React from "react";
 import { Typography } from "@material-ui/core";
-import placeholder from "../../Images/Home.jpg";
-import pressups_knees from "../../Images/pressups_knees.png";
-import dumbbell_row from "../../Images/dumbbell_row.jpg";
-import goblet_squat from "../../Images/goblet_squat_front_woman.jpg";
-import dumbbell_flyes from "../../Images/dumbbell_flyes.jpg";
-import dumbbell_flyes2 from "../../Images/dumbbell_flyes2.jpg";
+import overhead_tricep_press from "../../Images/overhead_tricep_press.jpg";
+import pressups_knees from "../../Images/pressups_knees.jpg";
+import dumbbell_row_4 from "../../Images/dumbbell_row_4.jpg";
+import side_raises_2 from "../../Images/side_raises_2.jpg";
+import goblet_squat_3 from "../../Images/goblet_squat_3.jpg";
+import calf_raises_2 from "../../Images/calf_raises_2.jpg";
 import dumbbell_flyes3 from "../../Images/dumbbell_flyes3.jpg";
-import side_raises from "../../Images/side_raises.jpg";
-import dumbbell_shoulder_press from "../../Images/lady_overhead_press.png";
-import overhead_press from "../../Images/overhead_press.jpg";
-import shrugs1 from "../../Images/shrugs1.jpg";
-import shrugs2 from "../../Images/shrugs2.jpg";
-import curls from "../../Images/curls.jpg";
-import dumbbell_lunge from "../../Images/dumbbell_lunge.jpg";
+import single_leg_deadlift_2 from "../../Images/single_leg_deadlift_2.jpg";
+import dumbbell_shoulder_press from "../../Images/lady_overhead_press.jpg";
+import Dumbbell_bench_floor from "../../Images/Dumbbell_bench_floor.jpg";
+import narrow_arm_pressups from "../../Images/narrow_arm_pressups.jpg";
 import hammer_curl1 from "../../Images/hammer_curl1.jpg";
 import hammer_curl2 from "../../Images/hammer_curl2.jpg";
-import SLDeadlift1 from "../../Images/SLDeadlift.jpg";
-import SLDeadlift2 from "../../Images/SLDeadlift2.jpg";
+import curls_cute from "../../Images/curls_cute.jpg";
+import upright_rows from "../../Images/upright_rows.jpg";
 import { useStyles } from "../../Styles";
 import {
   ArticleTitle,
@@ -31,15 +28,25 @@ import Equipment from "./Equipment";
 import WorkoutStructure from "./Structure";
 import ArticleMargin from "../Components/ArticleMargin.js";
 import { NoteToSelf } from "../../Widgets";
+import ArticleImage from "../Components/Image";
+import plank from "../../Images/plank_large.jpg";
+import dips from "../../Images/tricep_dips.jpg";
+import underhand_row from "../../Images/underhand_row.jpg";
+import arch from "../../Images/arch.jpg";
+import reverse_flys from "../../Images/reverse_flys.jpg";
+import piston_squat from "../../Images/piston_squat.jpg";
+import dumbbell_lunge_man from "../../Images/dumbbell_lunge_man.jpg";
+import glute_bridges from "../../Images/glute_bridges.jpg";
 
 export default function Content() {
   const classes = useStyles();
   return (
     <>
-      <ArticleTitle>INTENSIVE SIX DAY HOME WORKOUT</ArticleTitle>
+      <ArticleTitle>The Mega 6 Day Routine</ArticleTitle>
+      <ArticleImage src={plank} />
       <ArticleMargin>
         <Intro />
-        <Equipment />
+        {/* <Equipment /> */}
         <WorkoutStructure />
         <DayTitle>Day 1 - PUSH</DayTitle>
         <ExerciseItem
@@ -59,12 +66,21 @@ export default function Content() {
             your neck.
           </Typography>
           <Typography paragraph>
-            If you feel like increasing the difficulty put your feet on a raised
-            surface like your sofa.
+            <Typography style={{ fontWeight: "bold" }}>
+              To increase the difficulty:
+            </Typography>
+            Put your feet on a raised surface like your sofa.
+          </Typography>
+
+          <Typography paragraph>
+            <Typography style={{ fontWeight: "bold" }}>
+              To decrease the difficulty:
+            </Typography>
+            Do the exercise on your knees.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
-          title="Dumbbell Overhead Shoulder Press 4x10"
+          title="Overhead Shoulder Press 4x10"
           imgSrc={[dumbbell_shoulder_press]}
           ourTip="You don't need to touch the weights together at the top of this movement, doing so just takes the tension off your muscles."
         >
@@ -84,358 +100,479 @@ export default function Content() {
         <ExerciseItem
           title="Dumbbell Flys 4x10"
           imgSrc={[dumbbell_flyes3]}
-          ourTip="Tip"
+          ourTip="Don't over stretch with this movement or you risk damaging your shoulders."
         >
           <Typography paragraph>
-            Hold both weights above your shoulders with your palms facing
-            forward. Push the weight up until your arms are nearly straight, and
-            then let the weight back down making sure it is always under
+            This exercise is brilliant for isolating your chest muscles but it
+            is easy to let your shoulders take over if you are not careful. Try
+            and focus on feeling the stretch in your chest as you lower the
+            weight.
+          </Typography>
+          <Typography paragraph>
+            Hold both weights above you with your palms facing eachother. Lower
+            the weights to the side keeping a slight bend in your arms until you
+            feel a stretch in your chest. Push the weight up until the weights
+            nearly touch, and then repeat, making sure it is always under
             control.
           </Typography>
         </ExerciseItem>
-        {/* <ExerciseItem
-          title="Rear Delt Flyes 4x10"
-          imgSrc={[placeholder]}
-          ourTip="Make sure to keep
-          your head in a neutral position and your core tight to avoid strain on
-          your neck and back."
+        <ExerciseItem
+          title="Tricep overhead press 4x10"
+          imgSrc={[overhead_tricep_press]}
+          ourTip=" Focus on keeping your upper arm steady as you raise the weight back
+          up above your head"
         >
           <Typography paragraph>
-            The first area of the shoulder to be targeted in this workout. All
-            three delt heads will be targeted, with only side delts being
-            trained twice, as they get the least work in compound movements.
-            Rear delts are used to pull anything towards you, therefore they get
-            a lot of use, not least in back movements. Lean forward with
-            dumbbells out to the front, then pull out to each side, but only
-            move something like 45 degrees out to the side then repeat the
-            movement.
+            This exercise is a great way to get a good stretch in your triceps,
+            working the muscle even better. Start sitting or standing with the
+            weight above your head, then bending at the elbows lower the weight
+            behind you until you can feel a stretch in the back of your arms,
+            finally raise the weight back up above your head.
           </Typography>
           <Typography paragraph>
-            Increase the difficulty of this exercise by removing the balancing
-            aid. Lean forward, keeping your back straight and mimic the same
-            movement as the isolation, just with both arms at the same time.
-            This dramatically increased the compound nature of the exercise.
+            Exercises like this show that the "push pull legs" grouping can be
+            flexible as it can be helpful to think of yourself pulling the
+            weight back above your head, but in general I find it practical to
+            put tricep exercises in the push workout.
+          </Typography>
+        </ExerciseItem>
+        <DayTitle>Day 2 - PULL</DayTitle>
+        <ExerciseItem
+          title="Bicep Curls 4x10"
+          imgSrc={[curls_cute]}
+          ourTip="Twist your forearms to bring your little fingers up at the top of the curl. This recruits more of the bicep muscle fibres."
+        >
+          <Typography paragraph>
+            Biceps can be really fun to train but it's important not to let your
+            ego take over. They're only a relatively small muscle so don't be
+            afraid to use lighter weight in order to maintain good form.
+          </Typography>
+          <Typography paragraph>
+            Start with your arms straight, then curl the weight up as high as
+            you can while keeping your elbows and shoulders still. Keep the
+            weight under control as you lower it back down again.
+          </Typography>
+          <Typography paragraph>
+            If you want to make this exercise harder and work your forearms too,
+            it can be turned into Zottman curls. This is done by rotating the
+            wrists inwards as you perform the curl so that you end upo at the
+            top of the movement with your palms facing the floor. Rotate your
+            wrists back to their original position as you lower the weight.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
           title="Dumbbell Row 4x10"
-          imgSrc={[placeholder]}
-          ourTip="When you get to the top of the movement, supinate your wrist a small amount as the movement ends to  force more of a contraction from the lat."
+          imgSrc={[dumbbell_row_4]}
+          ourTip="Pull the weight towards the bottom section of your stomach."
         >
           <Typography paragraph>
-            This is the best home workout movement for back after pullups.
-            Because more people have dumbbells than a pull up bar, we have gone
-            with this. Try and use as heavy a weight as you can whilst not
-            sacrificing form. Make sure to lean to one side, left or right of
-            the bench with your arm extended out in front of you, then pull the
-            weight up to just under your working lat. Squeeze the muscle here,
-            this will help you learn how to flex your lats.
+            We feel that this is the best home workout movement for the back,
+            barring pull - ups which not everyone has the equipment to do from
+            home.
           </Typography>
           <Typography paragraph>
-            Increase the difficulty of this exercise by removing the bench. You
-            will want to lean forward, whilst keeping your back straight. Then
-            pull the weight towards you in a smooth fashion in the same manner
-            as above.
+            Use a bench or chair for support. Hold the weight in one hand
+            letting it hang down infront of you. Pull the weight up to your
+            stomach and try and squeeze your shoulder blades together for a
+            second before lowering the weight back down.
+          </Typography>
+          <Typography paragraph>
+            This exercise can be done with relatively heavy weight but make sure
+            the movement is smooth and controlled.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
-          title="Inverted Row 4x10"
-          imgSrc={[placeholder]}
-          ourTip="Lean against something raised for the best support. If not, place a knee and an arm on something and pull with one arm at a time. A proper bench allows for both sides to be utilised at the same time, making the exercise more compound in nature."
+          title="Upright Rows 3x8"
+          imgSrc={[upright_rows]}
+          ourTip="Only go as high as you can without any pain"
         >
           <Typography paragraph>
-            The back is probably the hardest muscle group to train at home. Pull
-            ups are the ideal movement, however, on the assumption that not
-            everybody has a pull-up bar in their house, we would recommend
-            dumbbell rows.
+            Upright rows are great for working both your shoulder, and trapezius
+            muscles. Traps are usually targeted with heavy shrugs which can be
+            hard to recreate at home, but this exercise is great because it can
+            be done with relatively light weight.
           </Typography>
           <Typography paragraph>
-            An exercise from the same neck of the woods as Dumbbell Rows, with
-            the exception being the grip that is used, this changed the
-            contraction slightly, as well as the plane of movement. Basically,
-            we are using the same muscles in a different way. Extend both arms
-            out but twist your wrists around so it is underhand (as if doing a
-            bicep curl), then pull up towards yourself and squeeze at the top of
-            the movement.
+            Stand up straight with a dumbbell in each hand and. Keep your core
+            engaged as you pull the weights up to your chest and then lower them
+            back down. Try to avoid bouncing in your knees until you cannot do
+            any more strict repetitions, then bouncing can be a useful way to
+            push through a couple more.
           </Typography>
           <Typography paragraph>
-            Further make this exercise tougher and more dynamic by starting in
-            the normal dumbbell row grip position and whilst pulling towards
-            you, rotate your wrists so you finish in the inverted grip position.
-            In the reverse of the movement, rotate your wrists back to the start
-            position.
+            If you're looking for a change, this exercise can be done with a
+            variety of equipment including resistance bands, kettlebells, and a
+            barbell.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
-          title="Bicep Curl 4x10"
-          imgSrc={[placeholder]}
-          ourTip="Full Range of motion is not required with bicep exercises like it is with basically every other exercise. Not using the full range of motion is not the same as using bad form. Keep your back straight etc. just reduce the distance that your bicep is flexing."
+          title="Side Raises 4x10"
+          imgSrc={[side_raises_2]}
+          ourTip="Try not to shrug your shoulders as your do this movement"
         >
           <Typography paragraph>
-            This is the exercise that most people were looking for in the pull
-            section, and here it is. Keep your arms by your sides, holding the
-            weights. Turn your wrists outwards slightly, then curl the weight
-            back towards you. Try to go straight into the next exercise (hammer
-            curls) quickly to maximise fatigue in your biceps. People with high
-            bicep insertions will want to heed the warning to stop at 90
-            degrees, otherwise the development of your biceps will be hindered.
+            I would say that side raises are one of the best shoulder exercises
+            you can do to for a balanced, well rounded physique. Not to mention
+            strengthening your shoulders is a great way to improve posture and
+            reduce pain. This is a movement that you do not do a lot outside of
+            the gym environment, so start with low weights as you gradually
+            build strength.
           </Typography>
           <Typography paragraph>
-            To push this exercise up to the next level, it can be turned into
-            Zottman curls. This is done by rotating the wrists inwards as you
-            perform the bicep curl, meaning your hands will be fully rotated at
-            the top of the curl. This will incorporate much more of your
-            forearms, as well as your biceps.
+            For this exercise you can start in a standing or seated position,
+            dumbbells by your sides. Raise your arms up to the side with a
+            slight bend in your elbow. Stop the movement when the weight is
+            roughly parallel to your shoulders and lower back down.
+          </Typography>
+          <Typography paragraph>
+            If you want to push this exercise up to eleven, use the{" "}
+            <a href="show?routine=fullbody#gauntlet">gauntlet</a> set variation.
+          </Typography>
+        </ExerciseItem>
+        <DayTitle>Day 3 - LEGS</DayTitle>
+        <ExerciseItem
+          title="Goblet Squats 4x10"
+          imgSrc={[goblet_squat_3]}
+          ourTip="Push through your heels throughout the exercise to engage your glutes and protect your knees."
+        >
+          <Typography paragraph>
+            Squats are the ideal exercise for leg day whether at home or in the
+            gym; they will build a strong foundation in your legs that will
+            serve you well in any other sport or just daily life.
+          </Typography>
+          <Typography paragraph>
+            Stand up with your feet shoulder-width apart. Hold your dumbbell up
+            to your chest with your elbows underneath it for support. Squat down
+            as low as you can without your back rounding or your knees caving
+            inwards then stand back up. It is important to protect your spine
+            and knees not to squat deeper than your flexibility allows. Depth
+            will come with time.
+          </Typography>
+          <Typography paragraph>
+            If you're looking to change up your routine and want variation of
+            this exercise, you can turn it into a box squat. This requires a
+            box, or an object that is flat and roughly the same height off the
+            ground as the bottom of your squat. Squat down onto the box where
+            you pause for a second before standing back up. This makes the
+            movement more difficult as you have to start the upward movement
+            from a complete standstill rather than using the energy stored up
+            from your descent.
+          </Typography>
+        </ExerciseItem>
+        <ExerciseItem
+          title="Calf Raises 3 x As Many Reps as Possible"
+          imgSrc={[calf_raises_2]}
+          ourTip="Try to fully extend all the way to your tip toes at the top and stretch your heels down at the bottom."
+        >
+          <Typography paragraph>
+            Strengthening your calves is an excellent way to build a strong
+            foundation for overall strength, balance and explosive power. This
+            makes them an especially crucial movement for those looking to
+            improve their athletic peformance.
+          </Typography>
+          <Typography paragraph>
+            To do this exercise find a raised surface like a step. Stand on it
+            with your heels off of the edge. Stretch your heels down at the
+            bottom of the movement then stand up on your tiptoes as high as you
+            can. You can hold a weight to make the exercise harder if you wish.
+          </Typography>
+        </ExerciseItem>
+        <ExerciseItem
+          title="Single Leg Romanian Deadlift 3x8"
+          imgSrc={[single_leg_deadlift_2]}
+          ourTip="Keep your knees slightly bent in this movement to protect them."
+        >
+          <Typography paragraph>
+            It can be hard to train hamstrings at home without the expensive
+            machines you find at the gym. Thankfully we're here to help and
+            Romanian Deadlifts are an excellent way to target your hamstrings,
+            glutes, lower back, in fact your whole posterior chain with minimal
+            equipment. Here we'll be doing them on one leg which also works all
+            of your stabilising and supporting muscles.
+          </Typography>
+          <Typography paragraph>
+            To do this exercise stand on one leg holding a dumbbell in one hand
+            hand. Your legs should be relatively straight but with a slight bend
+            in the knees. Keeping your back straight and your core engaged lean
+            forward and lift your non-supporting leg out behind you for balance.
+            Go as low as you can without rounding your back until you feel a
+            gentle tug in your hamstring. Finally stand back up and repeat the
+            movement.
+          </Typography>
+          <Typography paragraph>
+            It's ok to do this with both feet on the ground if you are
+            struggling at any point.
+          </Typography>
+        </ExerciseItem>
+        <DayTitle>Day 4 - PUSH</DayTitle>
+        <ExerciseItem
+          title="Dumbbell Bench Press 4x10"
+          imgSrc={[Dumbbell_bench_floor]}
+          ourTip="Make sure the weights are always inline with eachother to avoid imbalances"
+        >
+          <Typography paragraph>
+            It is ideal to do this exercise on some form of bench, but it is
+            also possible to do it lying flat on the floor. Either way this is a
+            great exercise for building a strong chest.
+          </Typography>
+          <Typography paragraph>
+            Lie flat on your back and extend both dumbbells up above you. Lower
+            the weights until they are just above your chest, and push back up
+            to the top. Keep your forearms pointing straight up to keep the load
+            off of your arms.
+          </Typography>
+          <Typography paragraph>
+            If you want to push yourself even more, you can finish off with an
+            extra set of close grip dumbbell bench press. Press the dumbbells
+            together with your palms facing eachother and do five extra
+            repetitions after your set is complete. This will work the chest
+            further and in a different way to the standard bench press.
+          </Typography>
+        </ExerciseItem>
+        <ExerciseItem
+          title="Narrow Arm Pressups 3 x As many as possible"
+          imgSrc={[narrow_arm_pressups]}
+          ourTip="Good form is always preferable to more weight, so don't be afraid to put your knees down to make this movement easier."
+        >
+          <Typography paragraph>
+            Narrow arm pressups are going to be great here to finish off your
+            chest while also working your triceps really hard. This underrated
+            exercise is brilliant for targetting your triceps with no equipment
+            as well as building all round upper body strength.
+          </Typography>
+          <Typography paragraph>
+            Rather than letting your elbows flair out to the side as you lower
+            your body, keep them tucked as close as your can to your body. This
+            takes some of the load off of your chest muscles and puts it on to
+            your triceps. This is already a harder variation than the standard
+            pressup so don't worry if you need to do fewer reps, or make the
+            movement easier.
+          </Typography>
+
+          <Typography paragraph>
+            <Typography style={{ fontWeight: "bold" }}>
+              To increase the difficulty:
+            </Typography>
+            Put your feet on a raised surface.
+          </Typography>
+          <Typography paragraph>
+            <Typography style={{ fontWeight: "bold" }}>
+              To decrease the difficulty:
+            </Typography>
+            Do the exercise on your knees
+          </Typography>
+        </ExerciseItem>
+        <ExerciseItem
+          title="Tricep Dips 4x10"
+          imgSrc={[dips]}
+          ourTip="Do this exercise throughout the day if you work from home to keep active."
+        >
+          <Typography paragraph>
+            Tricep dips are another excellent exercise for working out at home
+            because all you need is a raised surface such as a chair.
+          </Typography>
+          <Typography paragraph>
+            Sit on the surface with your hands placed either side of you and
+            your fingers facing your toes. Shift your backside off of the chair
+            so that your weight is on your hands and feet. Bending your arms and
+            lower yourself down as low as you can comfortably go without
+            excessively stretching your shoulders before pushing back up.
+          </Typography>
+          <Typography paragraph>
+            <Typography style={{ fontWeight: "bold" }}>
+              To increase the difficulty:
+            </Typography>
+            Put your feet on a raised surface, or balance a weight on your hips.
+          </Typography>
+          <Typography paragraph>
+            <Typography style={{ fontWeight: "bold" }}>
+              To decrease the difficulty:{" "}
+            </Typography>
+            Bend your legs to take some weight off of your arms.
+          </Typography>
+        </ExerciseItem>
+        <DayTitle>Day 5 - Pull</DayTitle>
+        <ExerciseItem
+          title="Underhand Rows 4x10"
+          imgSrc={[underhand_row]}
+          ourTip=""
+        >
+          <Typography paragraph>
+            You can use a barbell or dumbbells for this exercise which is
+            similar to standard rows but using an "underhand" grip. This changes
+            the way we use the muscle slightly and is a great variation to have
+            in your workout as well as conventional dumbbell rows.
+          </Typography>
+          <Typography paragraph>
+            Hold your weight so that your palms are facing forward. Pull the
+            weight towards the lower part of your stomach. Squeeze your shoulder
+            blades together for a secoond before lowering the weight back down.
+          </Typography>
+          <Typography paragraph>
+            Using dumbbells you can make this exercise even tougher and more
+            dynamic by starting in the normal dumbbell row grip position and
+            rotating your wrists as you pull so you finish in the underhand grip
+            position. Rotate your wrists back to the start position as you lower
+            the weight.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
           title="Hammer Curl 4x10"
           imgSrc={[hammer_curl1, hammer_curl2]}
-          ourTip="With Hammer curls, it can be hard for your muscle to understand when to contract naturally, gripping the weight as hard as you can makes this point in the movement more obvious to you as you feel it pinch at the right time."
+          ourTip="Grip the weight as hard as you can to help flex your biceps and also work your forearms."
         >
           <Typography paragraph>
-            Going straight into these after your bicep curls will maximise your
-            pump and the strain you are putting your biceps under. Make sure to
-            hold the weights by your sides in the hammer grip, then pull up to
-            your sides and stop. You can keep stopping the movement at 90
-            degrees for people with high bicep insertions, but it is not the end
-            of the world if you go a bit higher. Squeeze at the top of the
-            movement to maximise contraction.
+            Many people don't know that the bicep muscle is actually split into
+            two heads, the long head and the short head. Hammer curls target the
+            long head of the bicep more than conventional curls so it's really
+            important to include them in your workouts!
           </Typography>
           <Typography paragraph>
-            Make this exercise harder by changing the rep cycle, so make every
+            {/* Make this exercise harder by changing the rep cycle, so make every
             other rep a half-rep, pull it half the distance of a normal curl.
             This will force more blood into the muscle at the expense of range
             of movement. It will fatigue your muscles quicker than a normal rep
-            cycle.
-          </Typography>
-        </ExerciseItem>
-        <DayTitle>Day 2 - PUSH</DayTitle>
-        <ExerciseItem
-          title="Dumbbell Bench Press 4x10"
-          imgSrc={[placeholder]}
-          ourTip="Dumbbell bench is excellent for targeting imbalances between your pecs. To work on the imbalance, only match the reps of your weaker side with your strong side. Otherwise, your weak side will never improve, and you are doomed to a lop-sided bench press."
-        >
-          <Typography paragraph>
-            Barbell bench press is the best compound exercise for chest
-            workouts. By choosing dumbbell bench we are getting as close as we
-            can in the home workout setting. You lie flat on your back on a
-            bench or raised surface, extend both dumbbells upwards in the double
-            overhand grip (as if holding a barbell), then lower the weights
-            until they are just above your chest, then squeeze and push back up
-            to the top. Do not touch the weights at the top.
-          </Typography>
-          <Typography paragraph>
-            If you want to make this movement harder, you can finish sets with
-            close grip dumbbell bench press. You will want to press the
-            dumbbells together and lower them right down to your chest until
-            they touch it, then, whilst keeping the dumbbells pressed together,
-            perform five extra reps after your set is complete. This will force
-            your inner pectorals to do a lot more work than they are used to,
-            and it targets a different part of the chest.
+            cycle. */}
+            This exercise is done just like conventional bicep curls but with
+            your palms turned inwards, facing towards eachother. Make sure to
+            stretch out your arm fully at the bottom of the movement for full
+            range of motion.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
-          title="Dumbbell Flyes 4x10"
-          imgSrc={[dumbbell_flyes]}
-          ourTip="Do not touch the dumbbells together at the top. The best technique for activating the muscles is to go straight into the next rep with little or no pause."
+          title="Superman holds 3 x As many as possible"
+          imgSrc={[arch]}
+          ourTip="Squeeze your arms by your ears and keep your feet together."
         >
           <Typography paragraph>
-            As a general rule, no other exercise is going to be as useful at
-            isolating your pectorals. You should not use any secondary muscles
-            in this movement, at least once you get competent with it. The
-            exercise is best done if you have a bench, or are raised off the
-            floor, but it can be done on the floor. Lie flat with weights
-            suspended above your chest. Lower your weight down to your chest,
-            flaring your elbows outwards and then press back upwards.
+            This exercise while is good for working your glutes, your lower
+            back, and the often overlooked lower trapezius muscles. Having
+            developed strength and muscle in these areas not only makes you a
+            better and more balanced athelete who is less prone to injury, but
+            can really make you stand out aesthetically.
           </Typography>
           <Typography paragraph>
-            Make this exercise harder by incorporating Hammer flyes. You would
-            adopt a Hammer grip i.e., as if holding a barbell, and perform your
-            reps in that plane of movement. This just forces your pectorals to
-            move under tension in a different way to the one that you are used
-            to, this variation will initially be harder.
+            For this exercise lie down flat on your stomach. Where you choose to
+            hold your arms affects how difficult the exercise is. Lift your
+            chest, head, arms, and legs off the ground. Hold for a second and
+            lower.
+          </Typography>
+          <Typography paragraph>
+            <Typography style={{ fontWeight: "bold" }}>
+              To increase the difficulty:
+            </Typography>
+            Hold your arms above your head.
+            <Typography style={{ fontWeight: "bold" }}>
+              To decrease the difficulty:
+            </Typography>
+            Have your arms down by your side.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
-          title="Triceps Extension 4x10"
-          imgSrc={[placeholder]}
-          ourTip=" Try not to bounce the weight between reps. Try and keep the movement smooth and consistent otherwise you will start to grind your joints and that is not healthy."
+          title="Rear Delt Flys 4x12"
+          imgSrc={[reverse_flys]}
+          ourTip="Try to relax your arms and focus on your shoulders."
         >
           <Typography paragraph>
-            Arms are used in every compound exercise and about 90% of all gym
-            related activities. Therefore, having strong arms is very useful for
-            any athlete or fitness enthusiast and should be a focus of your
-            training. Your arm should be positioned above your head and the
-            weight should be lowered just behind your head and back up. Feel
-            free to use your free arm to support your working arm, this will
-            ease some pressure on your shoulder.
+            The back of your shoulers is such an overlooked muscle group but it
+            is integral to both the health of the shoulder, and the visual
+            balance between the front and back of your upper body.
           </Typography>
           <Typography paragraph>
-            If you are interested in making this exercise harder, you can change
-            the way it is performed. Lie on your back, hold your arm and
-            dumbbell out above you, like in DB bench press, then lower the
-            dumbbell down towards your opposite pectoral and then back to the
-            upright position. You must keep your elbow still throughout this
-            movement. Make sure to squeeze at the top.
+            Choose a relatively light weight for this exercise, the rear delts
+            are a small muscle head and so cannot lift much weight. Bend over
+            and with a slight bend in your elbows lift the weights up and out
+            behind you. Stop when the weights are roughly in line with your
+            shoulders and lower them back down.
+          </Typography>
+          <Typography paragraph>
+            You have a great opppertunity after you cannot do any more reps with
+            weight to keep doing the movement with just the weight of your arms.
+            It may feel silly but working your muscle beyond failure in this way
+            is great way to force progress.
+          </Typography>
+        </ExerciseItem>
+        <DayTitle>Day 6 - Legs</DayTitle>
+        <ExerciseItem
+          title="Piston Squat 3 x As many as possible"
+          imgSrc={[piston_squat]}
+          ourTip=""
+        >
+          <Typography paragraph>
+            A problem that people can encounter while working out from home is
+            making their routines challenging enough. This can be especially
+            true on leg day as your legs contain large, strong muscles that can
+            take a lot of work to sufficiently tire. Enter the piston squat.
+            This alternative to squats is incredibly challenging for your
+            muscles and your balance, but also highly adaptable to your strength
+            and flexibility level.
+          </Typography>
+          <Typography paragraph>
+            Stand on one leg with your other leg straight out in front of you.
+            Keep your knees together and squat down as low as you can keeping
+            your foot flat on the floor, then stand back up. It's ok if you
+            can't go down very low to start off with, strength and flexibility
+            will come with time.
+          </Typography>
+          <Typography paragraph>
+            <Typography style={{ fontWeight: "bold" }}>
+              To increase the difficulty:
+            </Typography>
+            Hold a dumbbell as you squat.
+            <Typography style={{ fontWeight: "bold" }}>
+              To decrease the difficulty:
+            </Typography>
+            Only go down so far that you can do at least 8 repetitions for the
+            three sets
           </Typography>
         </ExerciseItem>
         <ExerciseItem
-          title="Tricep Dips 3 x As Many Reps as Possible"
-          imgSrc={[dumbbell_lunge]}
-          ourTip="Anywhere can be a dip station. It could be some stairs, or using a sofa. It could even be a garden wall."
+          title="Dumbbell Lunge 4x10"
+          imgSrc={[dumbbell_lunge_man]}
+          ourTip="Try to keep your weight spread evenly between your feet."
         >
           <Typography paragraph>
-            Dips are a great exercise to end the workout on because they really
-            push your pump to new levels, just because of the tension you are
-            under. You set up leaning on the edge of a surface in a reverse
-            press up position. Best to lean on the palms of your hands and then
-            lower your body down towards the ground and then back up to lockout
-            position. This is quite a compound movement, but the most targeted
-            muscle group is the triceps brachii.
+            Lunges are a great option when working out from home. They recruit
+            many of your stabilising muscles while still working the large
+            flashy muscles in the legs hard. This means that you don't require
+            much weight to get a great workout.
           </Typography>
           <Typography paragraph>
-            Make this exercise harder by elevating your feet off the ground.
-            This increases the weight you have to move with each dip and will be
-            much more difficult than the feet-on-the-ground version.
+            To do this exercise stand with your feet one in front of the other
+            in a fairly wide stance. Hold the dumbbells and lunge down until
+            just before your knee touches the floor, then stand back up. The
+            ideal angle of your knees is 90 degrees.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
-          title="Side Raises 4x10 or Gauntlet Set."
-          imgSrc={[placeholder]}
-          ourTip="Incorporate a set of just flapping your arms in the proper plane of motion just after you finish the exercise, as a means of tiring your muscles out just a bit more."
+          title="Glute bridges 4x10"
+          imgSrc={[glute_bridges]}
+          ourTip="Try and avoid over arching your lower back, both to protect it and to keep the tension on your glute muscles."
         >
           <Typography paragraph>
-            This is my favourite exercise. Side delts are the least important
-            delt to work out in terms of strength and also the most important in
-            terms of shape. Side raises are also a movement that you do not do a
-            lot naturally outside of the gym environment, so start with low
-            weights because your shoulders will not be very strong moving
-            weights out to the side. You start in a standing position, dumbbells
-            by your sides. Then raise your arms up at almost full extension, but
-            with a bend in your elbow, stop the movement at roughly parallel to
-            your shoulders and lower the weights.
+            Glutes are an under targeted muscle group for the vast majority of
+            people. Working your glutes is beneficial for your posture and your
+            athletic performance, not to mention the aesthetic advantages. This
+            exercise can also help to increase the range of motion in your hip
+            flexors which is vital for anyone who spends a lot of their daily
+            life sat down.
           </Typography>
           <Typography paragraph>
-            If you want to push this exercise up to eleven, use the gauntlet set
-            variation. You start with two 10kg dumbbells for example and do max
-            reps, then drop the weight to 8kg and do max reps, then drop the
-            weight to 4kg and do max reps, the second half of the gauntlet would
-            include doing 8kg and 10kg respectively for max reps, ending the set
-            on 10kg for max. You can stop halfway if this is too much initially.
+            Lie down on your back With your feet on the floor, knees in the air.
+            Push through your heels and raise your hips up. Squeeze your glutes
+            together for a second then lower back down under control.
+          </Typography>
+          <Typography paragraph>
+            <Typography style={{ fontWeight: "bold" }}>
+              To increase the difficulty:
+            </Typography>
+            Balance a weight on your hips.
+            <Typography style={{ fontWeight: "bold" }}>
+              To decrease the difficulty:
+            </Typography>
+            Do one repetition but hold yourself up for as long as possible.
           </Typography>
         </ExerciseItem>
-        <DayTitle>Day 3 - LEGS</DayTitle>
-        <ExerciseItem
-          title="Dumbbell Squats 4x10"
-          imgSrc={[placeholder]}
-          ourTip="Be careful of how deep you squat; too shallow andd you're not getting the full benefit of the ecercise, but too deep and you risk putting excess strain on your lower back. You could also fall over!"
-        >
-          <Typography paragraph>
-            Squats are the original leg movement and are very useful for
-            strength gains in your legs and just overall strength gains. Squats
-            also can be used to build a very strong foundation in your legs that
-            will serve you well as your sports career goes on. You want to stand
-            up, feet shoulder-width apart. Hold your dumbbells by your sides and
-            squat down until you reach parallel with the ground. Remember to
-            increase your weights as you will gain strength in this movement
-            quite quickly.
-          </Typography>
-          <Typography paragraph>
-            If you wish to make this exercise harder for yourself, you can turn
-            it into a box squat. This requires a box, or an object that is flat
-            and roughly the same height off the ground as you would be when you
-            hit parallel on your squat. You would squat down same as normal,
-            just this time onto the box. This forces more activation from your
-            glutes, quads and hamstrings as the movement is more sudden and less
-            comfortable.
-          </Typography>
-        </ExerciseItem>
-        <ExerciseItem
-          title="Dumbbell Romanian Deadlift 4x10"
-          imgSrc={[placeholder]}
-          ourTip="Do not lockout on this movement. It will damage your knees and is totally unnecessary for the muscle engagement."
-        >
-          <Typography paragraph>
-            The straight-leg deadlift is probably the most effective hamstring
-            exercise, at least in terms of isolation. If you keep the rep
-            sequence from breaking, it can be very intense to the point of
-            cramping, but if that is not your goal, then stop before that point.
-            Remember to only bend forward as far as you can, you should have
-            feet shoulder-width apart and then lean forward holding the weight
-            in front of you.
-          </Typography>
-          <Typography paragraph>
-            If you want to make this exercise harder for yourself, like I
-            alluded to earlier, do not break the rep range between reps and push
-            for the whole 10 in one smooth sequence. This will fatigue your
-            hamstrings very quickly.
-          </Typography>
-        </ExerciseItem>
-        <ExerciseItem
-          title="Calf Raises 3 x As Many Reps as Possible"
-          imgSrc={[placeholder]}
-          ourTip="Try to fully extend all the way to your tip toes, this is the full range of motion that lots of people neglect. Going halfway will not stretch your calf muscles far enough."
-        >
-          <Typography paragraph>
-            This is the often neglected side of leg training. Calf training is
-            an excellent way to build a strong foundation for your overall leg
-            strength and balance. Calves support any leg movement, so then
-            surely it seems foolish to ignore them. People who play lots of
-            sports would really benefit from the extra training of their calves,
-            it helps things like changing direction and the power of your sprint
-            off the line.
-          </Typography>
-          <Typography paragraph>
-            To push this exercise up another level, do it with one leg at a
-            time. For this you will need something to lean on and help with your
-            balance unless you are an acrobat. Then push off with one leg whilst
-            holding the other off the ground. This puts more intense focus on
-            one muscle-grouping at a time.
-          </Typography>
-        </ExerciseItem>
-        <ExerciseItem
-          title="Dumbbell Lunges 4x10"
-          imgSrc={[placeholder]}
-          ourTip="Try to fully extend all the way to your tip toes, this is the full range of motion that lots of people neglect. Going halfway will not stretch your calf muscles far enough."
-        >
-          <Typography paragraph>
-            This is one of the more difficult exercises you will try, purely
-            because of how much work muscles your supporting muscles will do.
-            You start in an upright position, dumbbells by your side. Place one
-            foot in front of the other, then lean into the lunge until you hit
-            parallel, then start again. Try not to lean too far forward when
-            performing this movement because this will throw-off your balance.
-          </Typography>
-          <Typography paragraph>
-            If you want to make this exercise harder, you are a maniac, but here
-            it is. You change the rep structure to alternating lunges. Instead
-            of doing ten on one leg and then ten on the other leg, alternate
-            legs between reps. This keeps the muscles working constantly and
-            keeps both legs around the same level of fatigue.
-          </Typography>
-        </ExerciseItem>
-        <ExerciseItem
-          title="Prone Leg Raise 4x10"
-          imgSrc={[placeholder]}
-          ourTip="Raise your hips off the floor a tiny bit if you feel too much pressure on your lower back. Lower back spasms are to be avoided if possible as they put you out for a few weeks."
-        >
-          <Typography paragraph>
-            This is one of your Yoga inspired exercises, shamelessly admitted.
-            You have to lie face down on the floor or mat with your arms
-            supporting your body, then extend your working leg upwards and out
-            behind you until you reach your comfort limit. This is useful for
-            working on flexibility, as well as being a tough exercise in its own
-            right, this should help your hip-flexors get more flexible, even if
-            that just means less stiff. This exercise is included in our warmup
-            guide as a great means of warming up.
-          </Typography>
-          <Typography paragraph>
-            To make this exercise tougher, you will want to adopt a position on
-            all fours in a crawl position, you will then extend your leg
-            backwards from this position.
-          </Typography>
-        </ExerciseItem> */}
       </ArticleMargin>
     </>
   );

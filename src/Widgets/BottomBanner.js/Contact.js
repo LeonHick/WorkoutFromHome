@@ -1,6 +1,15 @@
 import React from "react";
 import { Email, Twitter, Facebook } from "@material-ui/icons";
 import { IconButton, Tooltip, Typography } from "@material-ui/core";
+import config from "../../config";
+
+function sendEmail() {
+  document.location = "mailto:" + config.emailAddress;
+}
+
+function openInNewTab(url) {
+  window.open(url, "_blank").focus();
+}
 
 export default function ContactDetails({ classes }) {
   return (
@@ -10,17 +19,17 @@ export default function ContactDetails({ classes }) {
       </Typography> */}
       <div style={{ textAlign: "center" }}>
         <Tooltip title={"email"}>
-          <IconButton>
+          <IconButton onClick={sendEmail}>
             <Email className={classes.logoIconEmail} />
           </IconButton>
         </Tooltip>
         <Tooltip title={"facebook"}>
-          <IconButton>
+          <IconButton onClick={() => openInNewTab(config.facebookAddress)}>
             <Facebook className={classes.logoIconFacebook} />
           </IconButton>
         </Tooltip>
         <Tooltip title={"twitter"}>
-          <IconButton>
+          <IconButton onClick={() => openInNewTab(config.twitterAddress)}>
             <Twitter className={classes.logoIconTwitter} />
           </IconButton>
         </Tooltip>

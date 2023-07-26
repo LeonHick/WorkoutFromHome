@@ -15,12 +15,28 @@ import {
 } from "@material-ui/core/colors";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { WorkoutRouter } from "./Routers";
-import { useStyles } from "./Styles";
+import { useStyles, footerStyles } from "./Styles";
 import BottomBanner from "./Widgets/BottomBanner.js";
+import Branding from "./Widgets/BottomBanner.js/Branding";
 import { ScrollToTop } from "./FunctionalComponents";
+
+const customBreakpointValues = {
+  values: {
+    xs: 0,
+    sm: 576,
+    md: 900,
+    lg: 1370,
+    xl: 1600,
+  },
+};
 
 export default function Dashboard() {
   const classes = useStyles();
+
+  const brandingClasses = footerStyles({
+    theme: "light",
+    includeColoredLogo: true,
+  });
 
   const [darkState, setDarkState] = useState(false);
   const palletType = darkState ? "dark" : "light";
@@ -29,6 +45,9 @@ export default function Dashboard() {
   const mainSecondaryColor = darkState ? deepOrange[900] : deepPurple[500];
 
   const myTheme = createMuiTheme({
+    breakpoints: {
+      ...customBreakpointValues,
+    },
     typography: {
       fontFamily: ["Montserrat", "sans-serif"].join(","),
       body1: {
@@ -74,9 +93,56 @@ export default function Dashboard() {
     <ThemeProvider theme={myTheme}>
       <CssBaseline />
       {process.env.REACT_APP_COMMINGSOON ? (
-        <div style={{ height: "100vh", overflow: "hidden" }}>
+        <div
+          style={{
+            // backgroundColor: "red",
+            height: "100vh",
+            overflow: "hidden",
+          }}
+        >
           <ComingSoon />
         </div>
+      ) : true ? (
+        //process.env.REACT_APP_SIMPLE
+        <>
+          <Router>
+            <ScrollToTop />
+            <Switch>
+              <Route exact path="/" render={() => <LandingPage />} />
+              <Route
+                path="/show"
+                render={(props) => (
+                  <>
+                    <Branding classes={brandingClasses} />
+                    <br />
+                    <br />
+                  </>
+                )}
+              />
+            </Switch>
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              className={classes.contentPadding}
+            >
+              <Grid item xs={10} md={8}>
+                <Switch>
+                  <Route
+                    path="/show"
+                    render={(props) => <WorkoutRouter {...props} />}
+                  />
+                  <Route
+                    path="/"
+                    render={(props) => <WorkoutsPage {...props} />}
+                  />
+                </Switch>
+              </Grid>
+            </Grid>
+            <BottomBanner />
+          </Router>
+        </>
       ) : (
         <>
           <Router>
@@ -96,7 +162,7 @@ export default function Dashboard() {
               alignItems="center"
               className={classes.contentPadding}
             >
-              <Grid item xs={9}>
+              <Grid item xs={8}>
                 <Switch>
                   <Route
                     exact

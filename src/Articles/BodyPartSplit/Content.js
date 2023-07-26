@@ -1,43 +1,45 @@
-import React from "react";
-import { Typography } from "@material-ui/core";
-import placeholder from "../../Images/Home.jpg";
-import dumbbell_bench from "../../Images/Dumbbell bench 2.png";
-import { useStyles } from "../../Styles";
-import {
-  ArticleTitle,
-  DayTitle,
-  ExerciseItem,
-  RoutineTable,
-} from "../Components";
-import Intro from "./Intro";
-import Equipment from "./Equipment";
-import WorkoutStructure from "./Structure";
-import ArticleMargin from "../Components/ArticleMargin.js";
-import { NoteToSelf } from "../../Widgets";
-import pressups_down from "../../Images/pressups_down_1.jpg";
-import pressups_up from "../../Images/pressups_up_1.jpg";
-import dumbbell_flyes from "../../Images/dumbbell_flyes.jpg";
-import dumbbell_flyes2 from "../../Images/dumbbell_flyes2.jpg";
-import goblet_squat from "../../Images/goblet_squat.png";
-import lunge from "../../Images/dumbbell_lunge.jpg";
-import calf_raise from "../../Images/calf raises 1.png";
-import prone_leg_raises from "../../Images/prone_leg_raises.png";
-import SLDeadlift from "../../Images/single_leg_deadlift.png";
-import curls_old from "../../Images/curls_old.png";
+// import React from "react";
+// import { Typography } from "@material-ui/core";
+// import placeholder from "../../Images/Home.jpg";
+// // import dumbbell_bench from "../../Images/Dumbbell bench 2.png";
+// import { useStyles } from "../../Styles";
+// import {
+//   ArticleTitle,
+//   DayTitle,
+//   ExerciseItem,
+//   RoutineTable,
+// } from "../Components";
+// import Intro from "./Intro";
+// import Equipment from "./Equipment";
+// import WorkoutStructure from "./Structure";
+// import ArticleMargin from "../Components/ArticleMargin.js";
+// import { NoteToSelf } from "../../Widgets";
+// import pressups_down from "../../Images/pressups_down_1.jpg";
+// import pressups_up from "../../Images/pressups_up_1.jpg";
+// import dumbbell_flyes from "../../Images/dumbbell_flyes.jpg";
+// import dumbbell_flyes2 from "../../Images/dumbbell_flyes2.jpg";
+// import goblet_squat from "../../Images/goblet_squat.png";
+// import lunge from "../../Images/dumbbell_lunge.jpg";
+// import calf_raise from "../../Images/calf_raises_1.png";
+// import prone_leg_raises from "../../Images/prone_leg_raises.png";
+// import SLDeadlift from "../../Images/single_leg_deadlift.png";
+// import curls_old from "../../Images/curls_old.png";
+// import ArticleImage from "../Components/Image";
 
 export default function Content() {
-  const classes = useStyles();
+  {
+    /* const classes = useStyles();
   return (
     <>
+      <ArticleImage />
       <ArticleTitle>The Classic Body Part Split</ArticleTitle>
       <ArticleMargin>
         <Intro />
-        <Equipment />
         <WorkoutStructure />
         <DayTitle>DAY 1 - Chest</DayTitle>
         <ExerciseItem
           title="Dumbbell Bench Press 4x10"
-          imgSrc={[dumbbell_bench]}
+          // imgSrc={[dumbbell_bench]}
           ourTip="The best way is to stop the movement before they touch and immediately start the next rep."
         >
           <Typography paragraph>
@@ -201,7 +203,7 @@ export default function Content() {
             plant your feet flat on the floor. This should take some of the
             weight off of your triceps.
           </Typography>
-        </ExerciseItem>
+         </ExerciseItem>
         <DayTitle>DAY 4 - shoulders</DayTitle>
         <ExerciseItem
           title="Front Raise 4x10"
@@ -306,6 +308,7 @@ export default function Content() {
           </Typography>
         </ExerciseItem>
       </ArticleMargin>
-    </>
-  );
+    </> 
+  ); */
+  }
 }

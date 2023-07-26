@@ -15,8 +15,10 @@ function capitalizeFirstLetter(string) {
 const noBorder = { borderBottom: "none" };
 
 export default function RoutineTable({ rows, headers, style }) {
+  const adjustPadding = window.innerWidth <= 350;
   return (
     <Table
+      padding={adjustPadding ? "none" : "normal"}
       size="small"
       style={{ borderStyle: "solid", borderWidth: 2, ...style }}
     >
@@ -24,7 +26,12 @@ export default function RoutineTable({ rows, headers, style }) {
         <TableRow>
           {headers.map((header, i) => (
             <TableCell style={{ textAlign: i !== 0 ? "center" : "left" }}>
-              <Typography style={{ fontWeight: "bold" }}>
+              <Typography
+                style={{
+                  fontWeight: "bold",
+                  ...(adjustPadding && { padding: 10 }),
+                }}
+              >
                 {capitalizeFirstLetter(header)}
               </Typography>
             </TableCell>
@@ -45,6 +52,7 @@ export default function RoutineTable({ rows, headers, style }) {
                       }%`,
                       textAlign: i !== 0 ? "center" : "left",
                       ...borders,
+                      ...(adjustPadding && { padding: 10 }),
                     }}
                   >
                     <Typography>{row[header]}</Typography>

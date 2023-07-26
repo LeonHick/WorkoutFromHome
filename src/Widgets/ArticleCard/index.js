@@ -31,6 +31,7 @@ export default function ArticleCard({
   cardSubtitles,
   backgroundColor,
   showProgress,
+  comingsoon,
 }) {
   const classes = useStyles();
 
@@ -40,8 +41,10 @@ export default function ArticleCard({
         <CssBaseline />
         <div
           className={classes.articleCard}
+          style={{ ...(comingsoon && { cursor: "default" }) }}
           onClick={() => {
-            history.push(to);
+            console.log({ history, to });
+            !comingsoon && history.push(to);
           }}
         >
           <img
@@ -61,7 +64,11 @@ export default function ArticleCard({
             }
           >
             <CardTitle>{cardTitle}</CardTitle>
-            <CardSubtitles content={cardSubtitles} />
+
+            <CardSubtitles
+              minimize={window.innerWidth <= 350}
+              content={cardSubtitles}
+            />
           </div>
         </div>
       </ThemeProvider>

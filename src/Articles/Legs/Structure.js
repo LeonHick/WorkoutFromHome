@@ -6,12 +6,12 @@ const headers = ["exercise", "sets", "reps"];
 
 const structure = [
   { exercise: "Dumbbell Goblet Squats", sets: 4, reps: 10 },
-  { exercise: "Dumbbell Lunges", sets: 4, reps: 10 },
+  { exercise: "Dumbbell Lunges", sets: 4, reps: 8 },
   { exercise: "Dumbbell Calf-Raises", sets: 4, reps: 10 },
   {
     exercise: "Single Leg Romanian Deadlift",
     sets: 4,
-    reps: 10,
+    reps: 8,
   },
   { exercise: "Prone Leg Raises", sets: 3, reps: 12 },
 ];

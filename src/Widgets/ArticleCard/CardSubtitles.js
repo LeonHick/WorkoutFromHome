@@ -2,7 +2,7 @@ import { ListItem, Typography, List } from "@material-ui/core";
 import React from "react";
 import useStyles from "./useStyles";
 
-export default function CardSubtitles({ content }) {
+export default function CardSubtitles({ content, minimize }) {
   const classes = useStyles();
   return (
     <List dense>

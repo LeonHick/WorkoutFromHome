@@ -9,6 +9,8 @@ export default function LandingPage() {
   return (
     <>
       <LandingHero classes={classes} />
+      <br />
+      <br />
       <LandingText />
     </>
   );

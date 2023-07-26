@@ -18,33 +18,21 @@ export default function Intro() {
       </Typography> */}
       <Typography paragraph variant="body1">
         Do you ever get bored while working out and feel like you’re just doing
-        the same thing over and over?{" "}
+        the same exercise over and over?{" "}
       </Typography>
       <Typography paragraph>
-        Have you ever wanted to target each body part more than once a week
-        without spending hours at the gym every day?
+        With this full body workout routine you will be training three days a
+        week, targetting each of your muscle groups in every session while still
+        keeping the workouts short and sweet. You should have at least one day
+        off between workouts to allow your muscles to rest and grow.{" "}
       </Typography>
       <Typography paragraph>
-        If any of those sound like you read on! With this three day a week full
-        body workout routine you will be training each of your muscle groups in
-        every session while still keeping the workouts short and sweet.{" "}
-      </Typography>
-      <Typography paragraph>
-        There are three sessions to make sure that you are doing enough volume
-        to get better and stronger while leaving enough time between workouts to
-        fully recover. You should have at least one day off between workouts to
-        allow your muscles to rest and grow.{" "}
-      </Typography>
-      <Typography paragraph>
-        Because every workout hits all of your muscle groups it’s ok if you need
-        to miss one out or move the days around – this workout can fit around
-        you guilt free!{" "}
+        It’s ok if you need to miss a session out or move the days around – this
+        workout can fit around you guilt free!{" "}
       </Typography>
       <Typography paragraph variant="body1">
-        As always it is important to make sure that your fitness expectations
-        are challenging but sensible. Reasonable and attainable fitness goals
-        are essential to your mental health so try not to compare yourself to
-        people whose entire lives revolve around maintaining a certain physique.
+        As always remember that avoiding setting unreasonable goals is essential
+        for wellbeing.
       </Typography>
     </>
   );

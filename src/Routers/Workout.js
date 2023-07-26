@@ -14,9 +14,14 @@ export default function WorkoutRouter(history) {
     const {
       location: { search },
     } = history;
+    console.log({
+      set: new URLSearchParams(search),
+    });
     var searchParams = new URLSearchParams(search);
     setRoutine(searchParams.get("routine"));
   }, [history]);
+
+  console.log({ routine });
 
   const Content = () => {
     switch (routine) {

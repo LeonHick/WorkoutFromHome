@@ -17,7 +17,6 @@ import hammer_curl1 from "../../Images/hammer_curl1.jpg";
 import hammer_curl2 from "../../Images/hammer_curl2.jpg";
 import SLDeadlift1 from "../../Images/SLDeadlift.jpg";
 import SLDeadlift2 from "../../Images/SLDeadlift2.jpg";
-import { useStyles } from "../../Styles";
 import {
   ArticleTitle,
   DayTitle,
@@ -29,15 +28,17 @@ import Intro from "./Intro";
 import Equipment from "./Equipment";
 import WorkoutStructure from "./Structure";
 import ArticleMargin from "../Components/ArticleMargin.js";
+import ArticleImage from "../Components/Image";
+import imgSrc from "../../Images/misc.jpg";
 
 export default function Content() {
-  const classes = useStyles();
   return (
     <>
-      <ArticleTitle>Total Full Body Home Workout</ArticleTitle>
+      <ArticleTitle>The Adaptable 3 day routine</ArticleTitle>
+      <ArticleImage src={imgSrc} />
       <ArticleMargin>
         <Intro />
-        <Equipment />
+        {/* <Equipment /> */}
         <WorkoutStructure />
         <DayTitle>DAY 1</DayTitle>
         <ExerciseItem
@@ -50,9 +51,9 @@ export default function Content() {
         >
           <Typography paragraph>
             Press-ups should be your go-to chest movement for a home workout.
-            Nothing else works your upper body as much without equipment. It
-            focuses mainly on your chest and triceps but also recruits muscles
-            in your core, shoulders, and back.
+            Nothing else works your upper body as much without equipment. This
+            exercise will mainly target your chest and triceps but also recruits
+            muscles in your core, shoulders, and back.
           </Typography>
           <Typography paragraph>
             Keep your elbows tucked in to your sides to work your triceps more,
@@ -63,28 +64,36 @@ export default function Content() {
             at the end of your set.
           </Typography>
           <Typography paragraph>
-            If you feel like increasing the difficulty put your feet on a raised
-            surface like your sofa.
+            <Typography style={{ fontWeight: "bold" }}>
+              To increase the difficulty:
+            </Typography>
+            Put your feet up on a raised surface.
+          </Typography>
+          <Typography paragraph>
+            <Typography style={{ fontWeight: "bold" }}>
+              To decrease the difficulty
+            </Typography>
+            Do the exercise on your knees.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
-          title="Dumbbell Overhead Shoulder Press 4x10"
+          title="Dumbbell Shoulder Press 4x10"
           imgSrc={[dumbbell_shoulder_press]}
-          ourTip="You don't need to touch the weights together at the top of this movement, doing so just takes the tension off your muscles."
+          ourTip="You don't need to touch the weights together at the top of this movement."
         >
           <Typography paragraph>
             On to the first shoulder exercise. Shoulders are not to be neglected
-            by anyone serious about fitness, as they are used in practically
+            by anyone serious about fitness as they are used in practically
             every upper body exercise and are an important part of a balanced
             physique and a healthy body.
           </Typography>
-          <Typography paragraph>
+          {/* <Typography paragraph>
             One thing to keep in mind however is that many people tend to be
             overdeveloped in the front of their shoulder in comparison to the
             side and back. If this is an issue for you, consider swapping in
             another exercise such as <a href="placeholder">side raises</a> or{" "}
             <a href="placeholder">rear delt flyes</a>.
-          </Typography>
+          </Typography> */}
           <Typography paragraph>
             To perform this exercise hold both weights above your shoulders with
             your palms facing forward. Push the weight up until your arms are
@@ -93,6 +102,7 @@ export default function Content() {
           </Typography>
         </ExerciseItem>
         <ExerciseItem
+          id="dumbbellrows"
           title="Dumbbell Rows 4x10"
           imgSrc={[dumbbell_row]}
           ourTip="Keep your core tight and avoid rounding your back to avoid strain on your lower back."
@@ -104,35 +114,11 @@ export default function Content() {
           </Typography>
           <Typography paragraph>
             Stand to one side of a bench or chair. Put one hand on the surface
-            and pull the weight towards where your stomach joins your hip. If
-            you have a proper gym-style bench, you can do this with both arms at
-            once, lying face down on the bench.
+            and pull the weight towards your stomach.
           </Typography>
           <Typography paragraph>
-            This exercise can be done with heavier weight, but make sure that
-            it’s not out of control and jerky. A big benefit of rows is that
-            they will also work the commonly neglected muscles at the back of
-            your shoulder as a secondary muscle group.
-          </Typography>
-        </ExerciseItem>
-        <ExerciseItem
-          title="Dumbbell Goblet Squats 4x10"
-          imgSrc={[goblet_squat]}
-          ourTip="While doing this exercise make sure that your weight doesn't shift
-          on to your toes. Always keep your core tight!"
-        >
-          <Typography paragraph>
-            Squats are the staple movement of all leg days and this is no
-            exception. Squats are a great all round leg exercise, working the
-            front and back of your legs as well as your glutes. They are also
-            excellent for overall mobility and flexibility.
-          </Typography>
-          <Typography paragraph>
-            To do this exercise stand up straight and hold the weight close to
-            your chest, then imagine your hips moving backwards as if you were
-            sitting down on a chair. Squat down as low as you comfortably can
-            without your back rounding, and then pushing throught your heels,
-            stand back up.
+            This exercise can be done with relatively heavy weight, but make
+            sure that it’s not out of control and jerky.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
@@ -142,19 +128,39 @@ export default function Content() {
         hold the other elbow in place."
         >
           <Typography paragraph>
-            Whether you're looking for big arms like Arnold Schwarzenegger, or
-            just a toned look, training your triceps is crucial. In fact triceps
-            make up about two thirds of your upper arm so they really shouldn't
-            be neglected! They already get worked a bit in the press-ups so this
-            should really finish them off.
+            Whether you're looking for size or tone training your triceps is
+            crucial. In fact triceps make up about two thirds of your upper arm
+            so they really shouldn't be neglected! They already get worked a bit
+            in the press-ups so this should really finish them off.
           </Typography>
           <Typography paragraph>
-            Start with the weight above your head with your arm straight. Lower
-            the weight until you feel a stretch in your arm and then raise it
-            again. You can do this exercise either with both arms or one arm at
-            a time.
+            Start with the weight above your head with your arms straight. Lower
+            the weight until you feel a stretch in the back of your arm and then
+            raise it again. You can do this exercise either with both arms or
+            one arm at a time.
           </Typography>
         </ExerciseItem>
+        <ExerciseItem
+          title="Dumbbell Goblet Squats 4x10"
+          imgSrc={[goblet_squat]}
+          ourTip="While doing this exercise make sure that your weight doesn't shift
+          on to your toes. Always keep your core tight!"
+        >
+          <Typography paragraph>
+            Squats are the staple movement of leg days and there's a reason.
+            Squats are a great all round leg exercise, working the front and
+            back of your legs as well as your glutes. They are also excellent
+            for overall mobility and flexibility.
+          </Typography>
+          <Typography paragraph>
+            To do this exercise stand up straight and hold the weight close to
+            your chest, then imagine your hips moving backwards as if you were
+            sitting down on a chair. Squat down as low as you comfortably can
+            without your back rounding. finally push throught your heels as you
+            stand back up.
+          </Typography>
+        </ExerciseItem>
+
         <DayTitle>DAY 2</DayTitle>
         <ExerciseItem
           title="Dumbbell Flyes 4x10"
@@ -164,17 +170,16 @@ export default function Content() {
         muscles."
         >
           <Typography paragraph>
-            This is another staple of a chest workout and is great for really
-            focusing on the chest muscles. The exercise is most effective when
-            done lying on a bench so that your rang of motion isn't limited but
-            it can be done lying on the floor as well.
+            This is most effective when done lying on a bench so that your range
+            of motion isn't limited but it can be done lying on the floor as
+            well.
           </Typography>
           <Typography paragraph>
-            To do this exercise start on your back with the weights above your
-            chest. Lower the weights out to your side with a slight bend in your
-            arms, stopping just before you feel a stretch in your shoulders.
-            Then imagine you're giving someone a massive hug and bring the
-            weights back up to the middle.
+            Start on your back with the weights above your chest. Lower the
+            weights out to your side with a slight bend in your arms, stopping
+            just before you feel a stretch in your shoulders. Then imagine
+            you're giving someone a massive hug and bring the weights back up to
+            the middle.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
@@ -194,18 +199,17 @@ export default function Content() {
             then with a slight bend in your arms bring the weights out to the
             side and back down again.
           </Typography>
-          <Typography paragraph>
-            The standard set variation is an option, but I love to do what I
-            call a gauntlet set to really feel the burn.
+          <Typography paragraph id="gauntlet">
+            If you really want to work your shoulders read on to see what I call
+            the gauntlet.
           </Typography>
           <Typography paragraph>
-            You start with a heavy weight where you can do about 5 reps of the
-            exercise. You do as many reps as you can with that weight and then
-            you drop the weight to about 75%. You do as many reps as you can,
-            and then drop it down again. You do as many reps as you can with
-            that weight and then you climb back up again.
+            Start with a heavy weight where you can do about 5 reps of the
+            exercise. Do as many reps as you can with that weight and then drop
+            the weight. Drop the weight once more, then start adding weight back
+            on again.
           </Typography>
-          <Typography paragraph>eg)</Typography>
+          <Typography paragraph>For example:</Typography>
           <RoutineTable
             headers={["weight", "reps"]}
             rows={[
@@ -232,8 +236,8 @@ export default function Content() {
             ]}
           />
           <Typography paragraph style={{ paddingTop: 40 }}>
-            You can stop hallway if this is too much initially, but trust me
-            there is no other way to feel the burn more.
+            You can stop halfway if this is too much initially, but trust me
+            there is no better way to feel the burn.
           </Typography>
         </ExerciseItem>
         <ExerciseItem
@@ -259,11 +263,9 @@ export default function Content() {
           ourTip="You can work your biceps even harder by doing a couple of reps with a bit of a swing once you can't do any more with strict form"
         >
           <Typography paragraph>
-            The bicep is a relatively small muscle, so make sure you're not
-            letting your ego take over here and using too much weight. Focus on
-            not letting your shoulders take over the movement just to get the
-            weight up. Keep them relaxed and really focus on feeling your biceps
-            flex.
+            The bicep is a relatively small muscle, so make sure not to let your
+            ego take over here and use too much weight. Focus on not using your
+            shoulders to move the weight, keep them relaxed.
           </Typography>
           <Typography paragraph>
             Start with the weight by your side, keep your elbows tucked in
@@ -279,25 +281,22 @@ export default function Content() {
         >
           <Typography paragraph>
             Dumbbell lunges are a deceptively difficult movement that requires a
-            good amount of balance as well as strength, so don’t be disheartened
-            if you have to start off with relatively light weights. This means
-            that they’re great for at home workouts because you don’t need a lot
-            of expensive equipment to work your legs hard.
+            good amount of balance as well as strength, this means they’re great
+            for home workouts.
           </Typography>
           <Typography paragraph>
-            When you lunge down try to keep your weight spread evenly between
+            Stand with one foot in front of the other in a relatively wide
+            stance. Lunge down and try to keep your weight spread evenly between
             your feet. The goal is to stop just before your knee touches the
             ground but if that does not feel comfortable for you then feel free
             to only go as low as you need.
           </Typography>
-          <Typography paragraph>
-            If you push legs hard enough especially if you are just getting
-            started or are returning after not training for a while, you will
-            not be able to move properly the morning after. I have a friend who
-            still tells people about his Mum having to help him put his socks on
-            the morning after his first leg day so take it easy as your learn
-            your body’s limits.
-          </Typography>
+          {/* <Typography paragraph>
+            If you push legs too hard especially early on you'll feel it the
+            next morning! I have a friend who still tells people about his Mum
+            having to help him put his socks on the morning after his first leg
+            day so take it easy as your learn your body’s limits.
+          </Typography> */}
         </ExerciseItem>
         <DayTitle>DAY 3</DayTitle>
         <ExerciseItem
@@ -311,14 +310,14 @@ export default function Content() {
             The Romanian deadlift or “straight-leg” deadlift is the staple of
             hamstring training due to its intensity and focus on your hamstring
             muscles. It's a perfect at home exercise to work your legs without
-            much equiptment.
+            much equipment.
           </Typography>
           <Typography paragraph>
-            To do this exercise hold the dumbbells with straight arms and have a
-            slight bend in your knees to protect them. Bend as far forward as
-            possible, without straining or bending your back, you should feel a
-            small tug on the hamstring. Then imagine pushing the ground away
-            from you and stand back up straight.
+            To do this exercise hold the dumbbells with a slight bend in your
+            knees to protect them. Bend as far forward as possible, without
+            straining or bending your back, you should feel a small tug on the
+            hamstring. Then imagine pushing the ground away from you and stand
+            back up straight.
           </Typography>
           <Typography paragraph>
             Avoid putting your weight on your toes and do not try and touch the
@@ -329,9 +328,7 @@ export default function Content() {
         <ExerciseItem
           title="Dumbbell Hammer Curls 4x10"
           imgSrc={[hammer_curl1, hammer_curl2]}
-          ourTip="Keep your back straight or you will
-        start to move your shoulders forward and they will start supplementing
-        the lift."
+          ourTip="Squeeze the weight as hard as you can to work your forearms as well."
         >
           <Typography paragraph>
             The second most fun dumbbell exercise for growing biceps. The hammer
@@ -341,7 +338,7 @@ export default function Content() {
           <Typography paragraph>
             This exercise is a lot like the standard bicep curl but your palms
             should stay facing eachother for the entire exercise. Like with
-            standard curls keep your shouders relaxed to ensure your biceps are
+            standard curls keep your shoulders relaxed to ensure your biceps are
             doing all of the work.
           </Typography>
           <Typography paragraph>
@@ -351,14 +348,15 @@ export default function Content() {
           </Typography>
         </ExerciseItem>
         <Typography paragraph style={{ fontStyle: "italic", paddingTop: 40 }}>
-          These last two exercises have already been explained earlier on in the
-          routine so I'm not going to go into more detail about them.
+          These last few exercises have already been explained earlier on in the
+          routine, so I've linked them below.
         </Typography>
         <ExerciseItem to="#pressups" title="Press Ups 4x10" />
         <ExerciseItem
           to="#sideraises"
           title="Dumbbell Side Raises 4x10 or Gauntlet Set"
         />
+        <ExerciseItem to="#dumbbellrows" title="Dumbbell Rows" />
       </ArticleMargin>
     </>
   );

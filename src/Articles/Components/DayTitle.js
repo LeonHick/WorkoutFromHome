@@ -1,14 +1,20 @@
-import { Typography } from "@material-ui/core";
+import { Typography, withWidth } from "@material-ui/core";
 import React from "react";
 
-export default function DayTitle({ children }) {
+export default withWidth()(({ children, width }) => {
   return (
     <>
       <br />
       <br />
-      <Typography variant="h3" style={{ textTransform: "uppercase" }}>
+      <Typography
+        variant={width === "xs" ? "h4" : "h3"}
+        style={{
+          textTransform: "uppercase",
+          ...(width === "xs" && { fontWeight: "bold" }),
+        }}
+      >
         {children}
       </Typography>
     </>
   );
-}
+});

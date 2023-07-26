@@ -16,7 +16,7 @@ export default makeStyles((theme) => ({
     padding: "10px 30px 10px 30px",
   },
   cardTitle: {
-    height: 70,
+    // height: 70,
     textTransform: "capitalize",
     color: "black",
     fontWeight: 700,
